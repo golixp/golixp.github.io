@@ -1,374 +1,404 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Lixp的Blog</title><link>https://golixp.github.io/posts/</link><description>Recent content in Posts on Lixp的Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>© 2025 Lixp. [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)</copyright><lastBuildDate>Wed, 26 Mar 2025 14:35:48 +0800</lastBuildDate><atom:link href="https://golixp.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust交叉编译和静态链接</title><link>https://golixp.github.io/posts/rust/rust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%92%8C%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5/</link><pubDate>Wed, 26 Mar 2025 14:35:48 +0800</pubDate><guid>https://golixp.github.io/posts/rust/rust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%92%8C%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5/</guid><description>&lt;h2 class="relative group">项目不包含C/C++依赖的Crate
-&lt;div id="%E9%A1%B9%E7%9B%AE%E4%B8%8D%E5%8C%85%E5%90%ABcc%E4%BE%9D%E8%B5%96%E7%9A%84crate" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E9%A1%B9%E7%9B%AE%E4%B8%8D%E5%8C%85%E5%90%ABcc%E4%BE%9D%E8%B5%96%E7%9A%84crate" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>如果依赖不包含C/C++依赖, Rust的交叉编译非常简单, 例如需要编译&lt;code>aarch64&lt;/code>平台的静态链接产物, 只需要:&lt;/p></description></item><item><title>Windows注册表更改按键映射</title><link>https://golixp.github.io/posts/windows%E6%B3%A8%E5%86%8C%E8%A1%A8%E6%9B%B4%E6%94%B9%E6%8C%89%E9%94%AE%E6%98%A0%E5%B0%84/</link><pubDate>Fri, 17 Jan 2025 16:43:29 +0800</pubDate><guid>https://golixp.github.io/posts/windows%E6%B3%A8%E5%86%8C%E8%A1%A8%E6%9B%B4%E6%94%B9%E6%8C%89%E9%94%AE%E6%98%A0%E5%B0%84/</guid><description>&lt;h2 class="relative group">介绍
-&lt;div id="%E4%BB%8B%E7%BB%8D" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E4%BB%8B%E7%BB%8D" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>win+r运行regedit打开注册表, 移动到&lt;code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout&lt;/code>&lt;/p></description></item><item><title>禁用Windows笔记本自带键盘</title><link>https://golixp.github.io/posts/%E7%A6%81%E7%94%A8windows%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%87%AA%E5%B8%A6%E9%94%AE%E7%9B%98/</link><pubDate>Fri, 17 Jan 2025 16:41:58 +0800</pubDate><guid>https://golixp.github.io/posts/%E7%A6%81%E7%94%A8windows%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%87%AA%E5%B8%A6%E9%94%AE%E7%9B%98/</guid><description>&lt;p>CMD管理员身份运行:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">sc config i8042prt start= disabled 禁用键盘
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sc config i8042prt start= demand 启用键盘
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>sc config是设置服务启动类型, 可选项disabled(禁用)/demand(手动)/auto(自动)&lt;/p></description></item><item><title>Aria2服务部署</title><link>https://golixp.github.io/posts/linux/aria2%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/</link><pubDate>Fri, 17 Jan 2025 16:30:56 +0800</pubDate><guid>https://golixp.github.io/posts/linux/aria2%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/</guid><description>&lt;h2 class="relative group">参考网址
-&lt;div id="%E5%8F%82%E8%80%83%E7%BD%91%E5%9D%80" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E5%8F%82%E8%80%83%E7%BD%91%E5%9D%80" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>&lt;a href="https://p3terx.com/archives/docker-aria2-pro.html" target="_blank">https://p3terx.com/archives/docker-aria2-pro.html&lt;/a>&lt;br>
-&lt;a href="https://p3terx.com/archives/aria2-frontend-ariang-tutorial.html" target="_blank">https://p3terx.com/archives/aria2-frontend-ariang-tutorial.html&lt;/a>&lt;/p></description></item><item><title>不使用中间变量交换值</title><link>https://golixp.github.io/posts/%E4%B8%8D%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E5%8F%98%E9%87%8F%E4%BA%A4%E6%8D%A2%E5%80%BC/</link><pubDate>Fri, 17 Jan 2025 16:20:16 +0800</pubDate><guid>https://golixp.github.io/posts/%E4%B8%8D%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E5%8F%98%E9%87%8F%E4%BA%A4%E6%8D%A2%E5%80%BC/</guid><description>&lt;p>如有 a,b 两个变量, 思路是先某种运算使 a 储存 a,b 的&lt;strong>全部信息&lt;/strong>, 然后用 b 与 a 进行逆运算使 b 得到 a 的初始值, 然后用 a 与 b 逆运算赋值给 a.&lt;/p></description></item><item><title>Quine程序</title><link>https://golixp.github.io/posts/quine%E7%A8%8B%E5%BA%8F/</link><pubDate>Fri, 17 Jan 2025 15:51:39 +0800</pubDate><guid>https://golixp.github.io/posts/quine%E7%A8%8B%E5%BA%8F/</guid><description>&lt;h2 class="relative group">介绍
-&lt;div id="%E4%BB%8B%E7%BB%8D" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E4%BB%8B%E7%BB%8D" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>Quine 程序是指自生成程序, 它不接受输入, 运行它会输出程序源代码.&lt;/p></description></item><item><title>Nginx部署前后端分离服务</title><link>https://golixp.github.io/posts/service/nginx%E9%83%A8%E7%BD%B2%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%9C%8D%E5%8A%A1/</link><pubDate>Thu, 26 Dec 2024 15:44:10 +0800</pubDate><guid>https://golixp.github.io/posts/service/nginx%E9%83%A8%E7%BD%B2%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%9C%8D%E5%8A%A1/</guid><description>&lt;p>将以下配置添加到 Nginx 配置文件中, 通常在 &lt;code>/etc/nginx/nginx.conf&lt;/code>, 或者在 &lt;code>/etc/nginx/conf.d&lt;/code> 下新建文件, 添加相关配置.&lt;/p></description></item><item><title>Caddy部署前后端分离服务</title><link>https://golixp.github.io/posts/service/caddy%E9%83%A8%E7%BD%B2%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%9C%8D%E5%8A%A1/</link><pubDate>Tue, 24 Dec 2024 17:24:55 +0800</pubDate><guid>https://golixp.github.io/posts/service/caddy%E9%83%A8%E7%BD%B2%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%9C%8D%E5%8A%A1/</guid><description>&lt;p>编写以下配置, 文件名 &lt;code>Caddyfile&lt;/code>&lt;/p>
-&lt;pre tabindex="0">&lt;code>:6006 {
-root * /home/guest/web/dist
-file_server
-encode zstd gzip
-handle_path /api/* {
-reverse_proxy localhost:6000
-}
-}
-&lt;/code>&lt;/pre>&lt;p>启动命令为 &lt;code>caddy run --environ --config /home/guest/web/Caddyfile&lt;/code>.&lt;/p></description></item><item><title>Linux挂载NFS磁盘</title><link>https://golixp.github.io/posts/linux/linux%E6%8C%82%E8%BD%BDnfs%E7%A3%81%E7%9B%98/</link><pubDate>Sat, 14 Sep 2024 16:15:51 +0800</pubDate><guid>https://golixp.github.io/posts/linux/linux%E6%8C%82%E8%BD%BDnfs%E7%A3%81%E7%9B%98/</guid><description>&lt;p>执行以下命令安装并挂载&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">sudo apt install nfs-common
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mkdir -p /mnt/server-disk
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo mount -t nfs 192.168.10.195:/volume1/server-disk /mnt/server-disk
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Ubuntu的Docker容器和镜像消失</title><link>https://golixp.github.io/posts/linux/ubuntu%E7%9A%84docker%E5%AE%B9%E5%99%A8%E5%92%8C%E9%95%9C%E5%83%8F%E6%B6%88%E5%A4%B1/</link><pubDate>Thu, 12 Sep 2024 13:48:57 +0800</pubDate><guid>https://golixp.github.io/posts/linux/ubuntu%E7%9A%84docker%E5%AE%B9%E5%99%A8%E5%92%8C%E9%95%9C%E5%83%8F%E6%B6%88%E5%A4%B1/</guid><description>&lt;p>一次ubuntu Linux机器内存溢出强行重启机器, 启动后docker的容器和镜像全部消失, 后台还有容器相关进程在运行, apt重装docker, 容器和镜像全部都能看到了, 然后在某次正常重启后, 又消失了, 网上查询了很多方式, 都不行, 最后发现是因为snap安装的docker和apt安装的docker共存导致的.&lt;/p></description></item><item><title>屏蔽部分GPU</title><link>https://golixp.github.io/posts/linux/%E5%B1%8F%E8%94%BD%E9%83%A8%E5%88%86gpu/</link><pubDate>Fri, 26 Jul 2024 14:41:21 +0800</pubDate><guid>https://golixp.github.io/posts/linux/%E5%B1%8F%E8%94%BD%E9%83%A8%E5%88%86gpu/</guid><description>&lt;p>使用&lt;code>lspci | grep NVIDIA&lt;/code>查看:&lt;/p>
-&lt;pre tabindex="0">&lt;code>3b:00.0 VGA compatible controller: NVIDIA Corporation Device 2684 (rev a1)
-3b:00.1 Audio device: NVIDIA Corporation Device 22ba (rev a1)
-5e:00.0 VGA compatible controller: NVIDIA Corporation Device 2684 (rev a1)
-5e:00.1 Audio device: NVIDIA Corporation Device 22ba (rev a1)
-86:00.0 VGA compatible controller: NVIDIA Corporation Device 2684 (rev a1)
-86:00.1 Audio device: NVIDIA Corporation Device 22ba (rev a1)
-af:00.0 VGA compatible controller: NVIDIA Corporation Device 2684 (rev a1)
-af:00.1 Audio device: NVIDIA Corporation Device 22ba (rev a1)
-&lt;/code>&lt;/pre>&lt;p>或者&lt;code>nvidia-smi&lt;/code>查看:&lt;/p></description></item><item><title>Btrfs + Grub2 报错: error: Unknown Filesystem. Grub Rescue></title><link>https://golixp.github.io/posts/grub2%E5%BC%95%E5%AF%BC%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 11 Jul 2024 23:21:30 +0800</pubDate><guid>https://golixp.github.io/posts/grub2%E5%BC%95%E5%AF%BC%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/</guid><description>&lt;p>开机报错:&lt;/p>
-&lt;pre tabindex="0">&lt;code>error: unknown filesystem.
-grub rescue&amp;gt;
-&lt;/code>&lt;/pre>&lt;p>无法进入系统引导页面, 这是grub恢复模式.&lt;/p>
-&lt;p>使用&lt;code>ls&lt;/code>查看磁盘, 会出现:&lt;/p></description></item><item><title>部署使用redis</title><link>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8redis/</link><pubDate>Tue, 09 Jul 2024 15:58:28 +0800</pubDate><guid>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8redis/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">docker run -p 6379:6379 --name redis -d redis
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Ubuntu系统NVIDIA驱动和CUDA安装</title><link>https://golixp.github.io/posts/linux/ubuntu%E7%B3%BB%E7%BB%9Fnvidia%E9%A9%B1%E5%8A%A8%E5%92%8Ccuda%E5%AE%89%E8%A3%85/</link><pubDate>Mon, 01 Jul 2024 16:25:33 +0800</pubDate><guid>https://golixp.github.io/posts/linux/ubuntu%E7%B3%BB%E7%BB%9Fnvidia%E9%A9%B1%E5%8A%A8%E5%92%8Ccuda%E5%AE%89%E8%A3%85/</guid><description>&lt;p>使用Ubuntu官方仓库安装:&lt;/p>
-&lt;ol>
-&lt;li>&lt;code>sudo ubuntu-drivers autoinstall&lt;/code>&lt;/li>
-&lt;li>重启&lt;/li>
-&lt;li>&lt;code>sudo apt install nvidia-cuda-toolkit&lt;/code>&lt;/li>
-&lt;li>&lt;code>sudo apt install nvidia-container-toolkit&lt;/code> / &lt;code>sudo apt install nvidia-docker2&lt;/code>&lt;/li>
-&lt;/ol>
-&lt;p>这种方式比传统的去NVIDIA官网下载&lt;code>.run&lt;/code>文件安装更简单, 并且仓库源由Ubuntu官方维护, 兼容性错误更少&lt;/p></description></item><item><title>MySQL安装相关</title><link>https://golixp.github.io/posts/service/mysql%E5%AE%89%E8%A3%85%E7%9B%B8%E5%85%B3/</link><pubDate>Mon, 01 Jul 2024 16:25:07 +0800</pubDate><guid>https://golixp.github.io/posts/service/mysql%E5%AE%89%E8%A3%85%E7%9B%B8%E5%85%B3/</guid><description>&lt;h2 class="relative group">安装
-&lt;div id="%E5%AE%89%E8%A3%85" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%85" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 普通安装&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker run -itd --name mysql -p 3306:3306 -e &lt;span class="nv">MYSQL_ROOT_PASSWORD&lt;/span>&lt;span class="o">=&lt;/span>密码 mysql
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 退出自动重启&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker run -itd --restart&lt;span class="o">=&lt;/span>always --name mysql -p 3306:3306 -e &lt;span class="nv">MYSQL_ROOT_PASSWORD&lt;/span>&lt;span class="o">=&lt;/span>密码 mysql
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;h2 class="relative group">备份恢复
-&lt;div id="%E5%A4%87%E4%BB%BD%E6%81%A2%E5%A4%8D" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E5%A4%87%E4%BB%BD%E6%81%A2%E5%A4%8D" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 备份&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mysqldump -u 用户名 -p密码 -h host_address -P port_number database_name &amp;gt; database_dump.sql
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 恢复&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mysql -u 用户名 -p密码 -h host_address -P port_number database_name &amp;lt; database_dump.sql
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Bspwm配置安装</title><link>https://golixp.github.io/posts/linux/bspwm%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</link><pubDate>Mon, 01 Jul 2024 16:23:55 +0800</pubDate><guid>https://golixp.github.io/posts/linux/bspwm%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</guid><description>&lt;h1 class="relative group">安装bspwm和sxhkd
-&lt;div id="%E5%AE%89%E8%A3%85bspwm%E5%92%8Csxhkd" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%85bspwm%E5%92%8Csxhkd" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h1>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">yay -S sxhkd bspwm
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>arch会自动创建desktop文件&lt;/p></description></item><item><title>部署aria2 Pro服务</title><link>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2aria2-pro%E6%9C%8D%E5%8A%A1/</link><pubDate>Mon, 01 Jul 2024 16:23:13 +0800</pubDate><guid>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2aria2-pro%E6%9C%8D%E5%8A%A1/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">docker run -d &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> --name aria2-pro &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> --restart unless-stopped &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> --log-opt max-size&lt;span class="o">=&lt;/span>50m &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> --network host &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -e &lt;span class="nv">RPC_SECRET&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;密码&amp;#34;&lt;/span> &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -e &lt;span class="nv">RPC_PORT&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">6800&lt;/span> &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -e &lt;span class="nv">LISTEN_PORT&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">6888&lt;/span> &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -v &lt;span class="nv">$PWD&lt;/span>/aria2/config:/config &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -v &lt;span class="nv">$PWD&lt;/span>/aria2/downloads:/downloads &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> p3terx/aria2-pro
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Windows拼音添加小鹤双拼</title><link>https://golixp.github.io/posts/windows%E6%8B%BC%E9%9F%B3%E6%B7%BB%E5%8A%A0%E5%B0%8F%E9%B9%A4%E5%8F%8C%E6%8B%BC/</link><pubDate>Mon, 01 Jul 2024 16:20:25 +0800</pubDate><guid>https://golixp.github.io/posts/windows%E6%8B%BC%E9%9F%B3%E6%B7%BB%E5%8A%A0%E5%B0%8F%E9%B9%A4%E5%8F%8C%E6%8B%BC/</guid><description>&lt;p>将以下内容报错为&lt;code>add_xiaohe.reg&lt;/code>, 然后执行:&lt;/p>
-&lt;pre tabindex="0">&lt;code>Windows Registry Editor Version 5.00
-[HKEY_CURRENT_USER\Software\Microsoft\InputMethod\Settings\CHS]
-&amp;#34;Enable Cloud Candidate&amp;#34;=dword:00000000
-&amp;#34;Enable Dynamic Candidate Ranking&amp;#34;=dword:00000001
-&amp;#34;EnableExtraDomainType&amp;#34;=dword:00000001
-&amp;#34;Enable self-learning&amp;#34;=dword:00000001
-&amp;#34;EnableSmartSelfLearning&amp;#34;=dword:00000001
-&amp;#34;EnableLiveSticker&amp;#34;=dword:00000000
-&amp;#34;Enable EUDP&amp;#34;=dword:00000001
-&amp;#34;Enable Double Pinyin&amp;#34;=dword:00000001
-&amp;#34;UserDefinedDoublePinyinScheme0&amp;#34;=&amp;#34;小鹤双拼*2*^*iuvdjhcwfg^xmlnpbksqszxkrltvyovt&amp;#34;
-&amp;#34;DoublePinyinScheme&amp;#34;=dword:0000000a
-&lt;/code>&lt;/pre></description></item><item><title>ssh动态socks5代理和端口转发</title><link>https://golixp.github.io/posts/linux/ssh%E5%8A%A8%E6%80%81socks5%E4%BB%A3%E7%90%86%E5%92%8C%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link><pubDate>Mon, 01 Jul 2024 16:18:58 +0800</pubDate><guid>https://golixp.github.io/posts/linux/ssh%E5%8A%A8%E6%80%81socks5%E4%BB%A3%E7%90%86%E5%92%8C%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid><description>&lt;h2 class="relative group">socks5代理
-&lt;div id="socks5%E4%BB%A3%E7%90%86" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#socks5%E4%BB%A3%E7%90%86" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">ssh -NT -p &lt;span class="m">52032&lt;/span> -D &lt;span class="m">6999&lt;/span> cmet@202.141.163.4
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>开启代理后使用&lt;code>Proxy SwitchyOmega&lt;/code>等浏览器插件使用代理&lt;/p></description></item><item><title>Python允许pip全局下载</title><link>https://golixp.github.io/posts/python/python%E5%85%81%E8%AE%B8pip%E5%85%A8%E5%B1%80%E4%B8%8B%E8%BD%BD/</link><pubDate>Mon, 01 Jul 2024 16:17:40 +0800</pubDate><guid>https://golixp.github.io/posts/python/python%E5%85%81%E8%AE%B8pip%E5%85%A8%E5%B1%80%E4%B8%8B%E8%BD%BD/</guid><description>&lt;p>python3.11以后默认不允许全局pip下载, 需要使用配置开启&lt;/p></description></item><item><title>Debian容器安装pyaudio</title><link>https://golixp.github.io/posts/linux/debian%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85pyaudio/</link><pubDate>Mon, 01 Jul 2024 16:17:15 +0800</pubDate><guid>https://golixp.github.io/posts/linux/debian%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85pyaudio/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">apt update
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">apt install portaudio19-dev
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pip install pyaudio
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Python获取当前文件绝对路径</title><link>https://golixp.github.io/posts/python/python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%96%87%E4%BB%B6%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84/</link><pubDate>Mon, 01 Jul 2024 16:15:44 +0800</pubDate><guid>https://golixp.github.io/posts/python/python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%96%87%E4%BB%B6%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">sys&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">pathlib&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="vm">__name__&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="s2">&amp;#34;__main__&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">sys&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">argv&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">])&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">pathlib&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">Path&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">sys&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">argv&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">])&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">absolute&lt;/span>&lt;span class="p">())&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Zerotier安装</title><link>https://golixp.github.io/posts/linux/zerotier%E5%AE%89%E8%A3%85/</link><pubDate>Mon, 01 Jul 2024 16:14:16 +0800</pubDate><guid>https://golixp.github.io/posts/linux/zerotier%E5%AE%89%E8%A3%85/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 安装&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">curl -s https://install.zerotier.com &lt;span class="p">|&lt;/span> sudo bash
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 设置 zerotier 开机自启&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl &lt;span class="nb">enable&lt;/span> zerotier-one.service
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 启动 zerotier 服务&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl start zerotier-one.service
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 加入网络&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">zerotier-cli join xxxxx
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 加入中继&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">zerotier-cli orbit xxxx xxxx
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;!-- zerotier-cli join e3918db4837426e5 -->
-&lt;!-- zerotier-cli orbit 00bdcdfc1b 00bdcdfc1b -->
-&lt;h2 class="relative group">搭建moon中继服务
-&lt;div id="%E6%90%AD%E5%BB%BAmoon%E4%B8%AD%E7%BB%A7%E6%9C%8D%E5%8A%A1" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E6%90%AD%E5%BB%BAmoon%E4%B8%AD%E7%BB%A7%E6%9C%8D%E5%8A%A1" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>首先:&lt;/p></description></item><item><title>Systemd管理服务</title><link>https://golixp.github.io/posts/linux/systemd%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1/</link><pubDate>Mon, 01 Jul 2024 16:13:15 +0800</pubDate><guid>https://golixp.github.io/posts/linux/systemd%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 启动服务&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl start docker
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 停止服务&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl stop docker
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 开机启动服务&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> docker
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 禁止开机启动服务&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl disable docker
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;h2 class="relative group">编写配置文件
-&lt;div id="%E7%BC%96%E5%86%99%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E7%BC%96%E5%86%99%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="k">[Unit]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">Description&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">my_server # 服务名称&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">After&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">network.target&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">[Service]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">Type&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">simple&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">User&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">ubuntu # 用户&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">Group&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">ubuntu # 用户组&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">WorkingDirectory&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">/home/ubuntu # 工作目录&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">ExecStart&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">/home/ubuntu/start.sh # 启动命令&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">Restart&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">on-failure # 异常重启机制 on-failure: 异常退出重启, always: 退出后总是重启&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">[Install]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">WantedBy&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">multi-user.target&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Netcat传输文件</title><link>https://golixp.github.io/posts/linux/netcat%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6/</link><pubDate>Mon, 01 Jul 2024 15:59:08 +0800</pubDate><guid>https://golixp.github.io/posts/linux/netcat%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 接受端&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nc -l -p &lt;span class="m">1234&lt;/span> &amp;gt; file.tar.gz
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 发送端&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nc 192.168.1.1 &lt;span class="m">1234&lt;/span> &amp;lt; file.tar.gz
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>适用于scp/rsync不能用的情况&lt;/p></description></item><item><title>Kvm安装win10虚拟机</title><link>https://golixp.github.io/posts/linux/kvm%E5%AE%89%E8%A3%85win10%E8%99%9A%E6%8B%9F%E6%9C%BA/</link><pubDate>Mon, 01 Jul 2024 15:58:40 +0800</pubDate><guid>https://golixp.github.io/posts/linux/kvm%E5%AE%89%E8%A3%85win10%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virtinst virt-manager
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl &lt;span class="nb">enable&lt;/span> --now libvirtd &lt;span class="c1"># 启动并使能libvirtd服务&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo lsmod &lt;span class="p">|&lt;/span> grep kvm &lt;span class="c1"># 确认KVM模块已正确加载&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># VirtIO驱动, 地址: https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo virt-install &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--name&lt;span class="o">=&lt;/span>windows10 &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--ram&lt;span class="o">=&lt;/span>&lt;span class="m">8192&lt;/span> &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--vcpus&lt;span class="o">=&lt;/span>&lt;span class="m">4&lt;/span> &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--cpu host &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--hvm &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--disk &lt;span class="nv">path&lt;/span>&lt;span class="o">=&lt;/span>/home/ubuntu/kvm/win10.img,size&lt;span class="o">=&lt;/span>60,bus&lt;span class="o">=&lt;/span>virtio,format&lt;span class="o">=&lt;/span>qcow2 &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--disk &lt;span class="nv">path&lt;/span>&lt;span class="o">=&lt;/span>/data/aria2/downloads/virtio-win-0.1.240.iso,device&lt;span class="o">=&lt;/span>cdrom &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--cdrom /data/aria2/downloads/Win10_22H2_Chinese_Simplified_x64v1.iso &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--os-type&lt;span class="o">=&lt;/span>windows &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--os-variant&lt;span class="o">=&lt;/span>win10 &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--network &lt;span class="nv">bridge&lt;/span>&lt;span class="o">=&lt;/span>virbr0,model&lt;span class="o">=&lt;/span>virtio &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--graphics spice,listen&lt;span class="o">=&lt;/span>0.0.0.0 &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>--video qxl
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>部署使用rabbitmq</title><link>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8rabbitmq/</link><pubDate>Mon, 01 Jul 2024 15:58:04 +0800</pubDate><guid>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8rabbitmq/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">docker run -itd -p 15672:15672 -p 5672:5672 -e &lt;span class="nv">RABBITMQ_DEFAULT_USER&lt;/span>&lt;span class="o">=&lt;/span>用户名 -e &lt;span class="nv">RABBITMQ_DEFAULT_PASS&lt;/span>&lt;span class="o">=&lt;/span>密码 --name rabbitmq --hostname&lt;span class="o">=&lt;/span>rabbitmqhostone rabbitmq:management
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>管理界面:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">wget http://localhost:15672/cli/rabbitmqadmin
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Debian容器安装alsa依赖</title><link>https://golixp.github.io/posts/linux/debian%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85alsa%E4%BE%9D%E8%B5%96/</link><pubDate>Mon, 01 Jul 2024 15:55:54 +0800</pubDate><guid>https://golixp.github.io/posts/linux/debian%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85alsa%E4%BE%9D%E8%B5%96/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">apt install alsa-utils
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">apt install libatlas-base-dev
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>添加ssh Key</title><link>https://golixp.github.io/posts/linux/%E6%B7%BB%E5%8A%A0ssh-key/</link><pubDate>Mon, 01 Jul 2024 15:55:05 +0800</pubDate><guid>https://golixp.github.io/posts/linux/%E6%B7%BB%E5%8A%A0ssh-key/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 在机器上添加&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;ssh-key&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/.ssh/authorized_keys
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 直接添加到远程&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ssh-copy-id user@host
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Linux添加用户到用户组</title><link>https://golixp.github.io/posts/linux/linux%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E5%88%B0%E7%94%A8%E6%88%B7%E7%BB%84/</link><pubDate>Mon, 01 Jul 2024 15:54:38 +0800</pubDate><guid>https://golixp.github.io/posts/linux/linux%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E5%88%B0%E7%94%A8%E6%88%B7%E7%BB%84/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">sudo usermod -a -G docker &lt;span class="nv">$USER&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>部署使用minio</title><link>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8minio/</link><pubDate>Mon, 01 Jul 2024 15:52:03 +0800</pubDate><guid>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8minio/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">docker run -d -p 9000:9000 -p 9090:9090 &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> --name minio &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -e &lt;span class="s2">&amp;#34;MINIO_ACCESS_KEY=用户名&amp;#34;&lt;/span> &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -e &lt;span class="s2">&amp;#34;MINIO_SECRET_KEY=密码&amp;#34;&lt;/span> &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> -v /data/minio_data:/data &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> minio/minio server &lt;span class="se">\
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span> /data --console-address &lt;span class="s2">&amp;#34;:9090&amp;#34;&lt;/span> -address &lt;span class="s2">&amp;#34;:9000&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Linux无法挂载NTFS硬盘</title><link>https://golixp.github.io/posts/linux%E6%97%A0%E6%B3%95%E6%8C%82%E8%BD%BDntfs%E7%A1%AC%E7%9B%98/</link><pubDate>Mon, 13 May 2024 14:30:11 +0800</pubDate><guid>https://golixp.github.io/posts/linux%E6%97%A0%E6%B3%95%E6%8C%82%E8%BD%BDntfs%E7%A1%AC%E7%9B%98/</guid><description>&lt;p>Linux KDE桌面环境下挂载NTFS格式移动硬盘失败, 经过检查是因为硬盘某些区块数据是drity的, 通过以下命令修复:&lt;/p></description></item><item><title>端口扫描工具</title><link>https://golixp.github.io/posts/linux/%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/</link><pubDate>Thu, 25 Apr 2024 16:19:00 +0800</pubDate><guid>https://golixp.github.io/posts/linux/%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 class="relative group">前言
-&lt;div id="%E5%89%8D%E8%A8%80" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E5%89%8D%E8%A8%80" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>平常经常遇到不知道局域网内服务器ip, 需要使用端口扫描来确定服务器ip的情况, 需要端口扫描的解决方案.&lt;/p></description></item><item><title>Termux安装ssh</title><link>https://golixp.github.io/posts/termux/termux%E5%AE%89%E8%A3%85ssh/</link><pubDate>Tue, 23 Apr 2024 21:52:18 +0800</pubDate><guid>https://golixp.github.io/posts/termux/termux%E5%AE%89%E8%A3%85ssh/</guid><description>&lt;h2 class="relative group">安装
-&lt;div id="%E5%AE%89%E8%A3%85" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E5%AE%89%E8%A3%85" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">pkg install openssh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;h2 class="relative group">运行
-&lt;div id="%E8%BF%90%E8%A1%8C" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E8%BF%90%E8%A1%8C" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>由于Termux没有systemd, 每次需要手动启动sshd&lt;/p></description></item><item><title>Docker中Python报错 ImportError: libGL.so.1: cannot open shared object file: No such file or directory</title><link>https://golixp.github.io/posts/python/docker%E4%B8%ADpython%E6%8A%A5%E9%94%99importerrorlibgl.so.1/</link><pubDate>Tue, 23 Apr 2024 13:23:18 +0800</pubDate><guid>https://golixp.github.io/posts/python/docker%E4%B8%ADpython%E6%8A%A5%E9%94%99importerrorlibgl.so.1/</guid><description>&lt;p>docker中安装yolo-v8运行报错:&lt;/p>
-&lt;pre tabindex="0">&lt;code>ImportError: libGL.so.1: cannot open shared object file: No such file or directory
-&lt;/code>&lt;/pre>&lt;p>查询发现为opencv包缺少动态链接库依赖, 使用apt下载opencv所有系统依赖:&lt;/p></description></item><item><title>Gradio播放返回.avi格式视频无法播放问题</title><link>https://golixp.github.io/posts/python/gradio%E6%92%AD%E6%94%BE%E8%BF%94%E5%9B%9E.avi%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E6%97%A0%E6%B3%95%E6%92%AD%E6%94%BE%E9%97%AE%E9%A2%98/</link><pubDate>Tue, 23 Apr 2024 11:13:06 +0800</pubDate><guid>https://golixp.github.io/posts/python/gradio%E6%92%AD%E6%94%BE%E8%BF%94%E5%9B%9E.avi%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E6%97%A0%E6%B3%95%E6%92%AD%E6%94%BE%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 class="relative group">现象
-&lt;div id="%E7%8E%B0%E8%B1%A1" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E7%8E%B0%E8%B1%A1" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>在服务器外部启动gradio, 输入一个mp4视频, 输出一个avi格式视频, 简单代码如下:&lt;/p></description></item><item><title>Termux访问手机内部存储</title><link>https://golixp.github.io/posts/termux/termux%E8%AE%BF%E9%97%AE%E6%89%8B%E6%9C%BA%E5%86%85%E9%83%A8%E5%AD%98%E5%82%A8/</link><pubDate>Mon, 22 Apr 2024 17:16:06 +0800</pubDate><guid>https://golixp.github.io/posts/termux/termux%E8%AE%BF%E9%97%AE%E6%89%8B%E6%9C%BA%E5%86%85%E9%83%A8%E5%AD%98%E5%82%A8/</guid><description>&lt;p>首先安装&lt;code>termux-api&lt;/code>:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">pkg install termux-api
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后执行:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">termux-setup-storage
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>之后手机会弹出Termux请求访问内部存储, 允许之后, 会生成&lt;code>~/storage&lt;/code>, 它是一个符号链接, 指向手机内部存储.&lt;/p></description></item><item><title>Termux换源</title><link>https://golixp.github.io/posts/termux/termux%E6%8D%A2%E6%BA%90/</link><pubDate>Mon, 22 Apr 2024 17:15:55 +0800</pubDate><guid>https://golixp.github.io/posts/termux/termux%E6%8D%A2%E6%BA%90/</guid><description>&lt;p>Termux换源非常简单, 执行&amp;quot;&lt;code>termux-change-repo&lt;/code>, 在cli图形界面选择要更换的源即可.&lt;/p></description></item><item><title>Linux服务器创建低权限用户并禁止密码登录</title><link>https://golixp.github.io/posts/linux/linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%9B%E5%BB%BA%E4%BD%8E%E6%9D%83%E9%99%90%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</link><pubDate>Fri, 19 Apr 2024 17:37:35 +0800</pubDate><guid>https://golixp.github.io/posts/linux/linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%9B%E5%BB%BA%E4%BD%8E%E6%9D%83%E9%99%90%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</guid><description>&lt;h2 class="relative group">新建用户
-&lt;div id="%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E6%96%B0%E5%BB%BA%E7%94%A8%E6%88%B7" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">sudo adduser newuser
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 修改密码&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo passwd newuser
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 授予sudo权限&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo usermod -aG sudo newuser
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;h2 class="relative group">为用户添加公钥
-&lt;div id="%E4%B8%BA%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E4%B8%BA%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>使用&lt;code>ssh-keygen -t rsa -C &amp;quot;newuser&amp;quot; &lt;/code>命令生成一对公私钥, 在服务器上将公钥内容添加到&lt;code>authorized_keys&lt;/code>中.&lt;/p></description></item><item><title>终端中git信息中文显示为ASCII编码问题</title><link>https://golixp.github.io/posts/%E7%BB%88%E7%AB%AF%E4%B8%ADgit%E4%BF%A1%E6%81%AF%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E4%B8%BAascii%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98/</link><pubDate>Tue, 16 Apr 2024 21:14:19 +0800</pubDate><guid>https://golixp.github.io/posts/%E7%BB%88%E7%AB%AF%E4%B8%ADgit%E4%BF%A1%E6%81%AF%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E4%B8%BAascii%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98/</guid><description>&lt;p>默认配置下的git在修改包含中文内容的时候, 会出现如下情况:&lt;/p>
-&lt;pre tabindex="0">&lt;code>位于分支 writer
-您的分支与上游分支 &amp;#39;origin/writer&amp;#39; 一致。
-尚未暂存以备提交的变更：
-（使用 &amp;#34;git add &amp;lt;文件&amp;gt;...&amp;#34; 更新要提交的内容）
-（使用 &amp;#34;git restore &amp;lt;文件&amp;gt;...&amp;#34; 丢弃工作区的改动）
-修改： .gitignore
-修改： &amp;#34;content/posts/\346\265\213\350\257\225\346\226\207\347\253\240.md&amp;#34;
-修改尚未加入提交（使用 &amp;#34;git add&amp;#34; 和/或 &amp;#34;git commit -a&amp;#34;）
-&lt;/code>&lt;/pre>&lt;p>可以看到中文显示为ASCII编码, 这是由于Git的&lt;code>core.quotepath&lt;/code>配置默认是&lt;code>true&lt;/code>, 它会将所有非ASCII字符转换为ASCII编码，因此中文路径和文件名会显示为不可读的字符。&lt;/p></description></item><item><title>KDE中每次启动应用都申请开启kdewallet的问题</title><link>https://golixp.github.io/posts/kde%E4%B8%AD%E6%AF%8F%E6%AC%A1%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E9%83%BD%E7%94%B3%E8%AF%B7%E5%BC%80%E5%90%AFkdewallet%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Tue, 16 Apr 2024 21:01:31 +0800</pubDate><guid>https://golixp.github.io/posts/kde%E4%B8%AD%E6%AF%8F%E6%AC%A1%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E9%83%BD%E7%94%B3%E8%AF%B7%E5%BC%80%E5%90%AFkdewallet%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p>编辑文件&lt;code>~/.config/kwalletrc&lt;/code>:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ini" data-lang="ini">&lt;span class="line">&lt;span class="cl">&lt;span class="k">[Auto Deny]&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="na">kdewallet&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">codium&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在其中加入你需要启动的应用名称&lt;/p></description></item><item><title>批量修改git仓库历史提交作者信息</title><link>https://golixp.github.io/posts/%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9git%E4%BB%93%E5%BA%93%E5%8E%86%E5%8F%B2%E6%8F%90%E4%BA%A4%E4%BD%9C%E8%80%85%E4%BF%A1%E6%81%AF/</link><pubDate>Tue, 16 Apr 2024 19:06:44 +0800</pubDate><guid>https://golixp.github.io/posts/%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9git%E4%BB%93%E5%BA%93%E5%8E%86%E5%8F%B2%E6%8F%90%E4%BA%A4%E4%BD%9C%E8%80%85%E4%BF%A1%E6%81%AF/</guid><description>&lt;p>今天push的时候看到仓库有些commit是使用公司的邮箱提交的, 需要修改所有历史commit中的提交作者信息&lt;/p></description></item><item><title>Python脚本编写-匹配同时间段的音频和图片</title><link>https://golixp.github.io/posts/python/python%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99-%E5%8C%B9%E9%85%8D%E5%90%8C%E6%97%B6%E9%97%B4%E6%AE%B5%E7%9A%84%E9%9F%B3%E9%A2%91%E5%92%8C%E5%9B%BE%E7%89%87/</link><pubDate>Tue, 16 Apr 2024 10:52:52 +0800</pubDate><guid>https://golixp.github.io/posts/python/python%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99-%E5%8C%B9%E9%85%8D%E5%90%8C%E6%97%B6%E9%97%B4%E6%AE%B5%E7%9A%84%E9%9F%B3%E9%A2%91%E5%92%8C%E5%9B%BE%E7%89%87/</guid><description>&lt;h2 class="relative group">需求
-&lt;div id="%E9%9C%80%E6%B1%82" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E9%9C%80%E6%B1%82" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;p>现有两个目录, 其中图片&lt;code>image/source/&lt;/code>目录部分内容:&lt;/p></description></item><item><title>使用yolo-v8检测视频中的老鼠</title><link>https://golixp.github.io/posts/python/%E4%BD%BF%E7%94%A8yolo-v8%E6%A3%80%E6%B5%8B%E8%A7%86%E9%A2%91%E4%B8%AD%E7%9A%84%E8%80%81%E9%BC%A0/</link><pubDate>Mon, 15 Apr 2024 17:02:22 +0800</pubDate><guid>https://golixp.github.io/posts/python/%E4%BD%BF%E7%94%A8yolo-v8%E6%A3%80%E6%B5%8B%E8%A7%86%E9%A2%91%E4%B8%AD%E7%9A%84%E8%80%81%E9%BC%A0/</guid><description>&lt;h2 class="relative group">创建conda环境
-&lt;div id="%E5%88%9B%E5%BB%BAconda%E7%8E%AF%E5%A2%83" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E5%88%9B%E5%BB%BAconda%E7%8E%AF%E5%A2%83" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">conda create -n moused &lt;span class="nv">python&lt;/span>&lt;span class="o">=&lt;/span>3.10
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;h2 class="relative group">进入conda环境
-&lt;div id="%E8%BF%9B%E5%85%A5conda%E7%8E%AF%E5%A2%83" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E8%BF%9B%E5%85%A5conda%E7%8E%AF%E5%A2%83" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">conda activate moused
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;h2 class="relative group">配置环境
-&lt;div id="%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">mkdir moused
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> moused
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pip install ultralytics
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
-&lt;h2 class="relative group">预测
-&lt;div id="%E9%A2%84%E6%B5%8B" class="anchor">&lt;/div>
-&lt;span
-class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-style="text-decoration-line: none !important;" href="#%E9%A2%84%E6%B5%8B" aria-label="锚点">#&lt;/a>
-&lt;/span>
-&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">yolo detect predict &lt;span class="nv">model&lt;/span>&lt;span class="o">=&lt;/span>yolov8x.pt &lt;span class="nv">source&lt;/span>&lt;span class="o">=&lt;/span>mouse.mp4
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>效果并不好, 需要使用自定义数据集微调.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Lixp的Blog</title><link>https://golixp.github.io/posts/</link><description>Recent content in Posts on Lixp的Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>© 2026 Lixp. [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)</copyright><lastBuildDate>Tue, 13 Jan 2026 19:33:46 +0800</lastBuildDate><atom:link href="https://golixp.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Rime输入法安装</title><link>https://golixp.github.io/posts/rime%E8%BE%93%E5%85%A5%E6%B3%95%E5%AE%89%E8%A3%85/</link><pubDate>Tue, 13 Jan 2026 19:33:46 +0800</pubDate><guid>https://golixp.github.io/posts/rime%E8%BE%93%E5%85%A5%E6%B3%95%E5%AE%89%E8%A3%85/</guid><description>&lt;h2 class="relative group"&gt;配置文件
+ &lt;div id="配置文件" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;使用雾凇拼音方案(Rime-ICE), Rime-ICE 是社区维护的 Rime 配置, 项目地址为 &lt;a href="https://github.com/iDvel/rime-ice" target="_blank" rel="noreferrer"&gt;https://github.com/iDvel/rime-ice&lt;/a&gt; , 集成了很多常用功能, 支持双拼和全拼, 由于会经常更新, 所以用户自己对配置文件直接修改会在更新时被覆盖掉, 所以推荐用 Rime 中对配置文件 Patch 的机制来嵌入自己的配置内容, Rime 官方文档的配置规则为以下内容:&lt;/p&gt;</description></item><item><title>Git 基本配置</title><link>https://golixp.github.io/posts/git%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link><pubDate>Tue, 13 Jan 2026 19:32:41 +0800</pubDate><guid>https://golixp.github.io/posts/git%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid><description>&lt;p&gt;Windows 可以在 &lt;a href="https://git-scm.com/" target="_blank" rel="noreferrer"&gt;https://git-scm.com/&lt;/a&gt; 下载安装, Linux 一般发行版都自带 Git .&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;ssh-keygen&lt;/code&gt; 命令可以生成 ssh-key , 在 Windows 和 Linux 一般都是自带的, 终端运行后可以交互式生成, 没有特殊需求直接按三次回车即可.&lt;/p&gt;</description></item><item><title>ArchLinux 安装配置</title><link>https://golixp.github.io/posts/linux/archlinux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link><pubDate>Tue, 13 Jan 2026 19:06:44 +0800</pubDate><guid>https://golixp.github.io/posts/linux/archlinux%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid><description>&lt;h2 class="relative group"&gt;安装
+ &lt;div id="安装" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%ae%89%e8%a3%85" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;这里选择 EndeavourOS , 它是一个 Arch Linux 的发行版, 安装更加方便, 初始安装自带桌面, 方便进行后续操作, 同时接近上游, 不像 Manjaro 一样对 Arch Linux 有很多改动.&lt;/p&gt;</description></item><item><title>Rust交叉编译和静态链接</title><link>https://golixp.github.io/posts/rust/rust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%92%8C%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5/</link><pubDate>Wed, 26 Mar 2025 14:35:48 +0800</pubDate><guid>https://golixp.github.io/posts/rust/rust%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%92%8C%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5/</guid><description>&lt;h2 class="relative group"&gt;项目不包含C/C++依赖的Crate
+ &lt;div id="项目不包含cc依赖的crate" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%a1%b9%e7%9b%ae%e4%b8%8d%e5%8c%85%e5%90%abcc%e4%be%9d%e8%b5%96%e7%9a%84crate" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;如果依赖不包含C/C++依赖, Rust的交叉编译非常简单, 例如需要编译&lt;code&gt;aarch64&lt;/code&gt;平台的静态链接产物, 只需要:&lt;/p&gt;</description></item><item><title>Windows注册表更改按键映射</title><link>https://golixp.github.io/posts/windows%E6%B3%A8%E5%86%8C%E8%A1%A8%E6%9B%B4%E6%94%B9%E6%8C%89%E9%94%AE%E6%98%A0%E5%B0%84/</link><pubDate>Fri, 17 Jan 2025 16:43:29 +0800</pubDate><guid>https://golixp.github.io/posts/windows%E6%B3%A8%E5%86%8C%E8%A1%A8%E6%9B%B4%E6%94%B9%E6%8C%89%E9%94%AE%E6%98%A0%E5%B0%84/</guid><description>&lt;h2 class="relative group"&gt;介绍
+ &lt;div id="介绍" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%bb%8b%e7%bb%8d" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;win+r运行regedit打开注册表, 移动到&lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout&lt;/code&gt;&lt;/p&gt;</description></item><item><title>禁用Windows笔记本自带键盘</title><link>https://golixp.github.io/posts/%E7%A6%81%E7%94%A8windows%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%87%AA%E5%B8%A6%E9%94%AE%E7%9B%98/</link><pubDate>Fri, 17 Jan 2025 16:41:58 +0800</pubDate><guid>https://golixp.github.io/posts/%E7%A6%81%E7%94%A8windows%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%87%AA%E5%B8%A6%E9%94%AE%E7%9B%98/</guid><description>&lt;p&gt;CMD管理员身份运行:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-cmd" data-lang="cmd"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sc config i8042prt start= disabled 	禁用键盘
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sc config i8042prt start= demand 	启用键盘&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;sc config是设置服务启动类型, 可选项disabled(禁用)/demand(手动)/auto(自动)&lt;/p&gt;</description></item><item><title>Aria2服务部署</title><link>https://golixp.github.io/posts/linux/aria2%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/</link><pubDate>Fri, 17 Jan 2025 16:30:56 +0800</pubDate><guid>https://golixp.github.io/posts/linux/aria2%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2/</guid><description>&lt;h2 class="relative group"&gt;参考网址
+ &lt;div id="参考网址" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%8f%82%e8%80%83%e7%bd%91%e5%9d%80" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://p3terx.com/archives/docker-aria2-pro.html" target="_blank" rel="noreferrer"&gt;https://p3terx.com/archives/docker-aria2-pro.html&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://p3terx.com/archives/aria2-frontend-ariang-tutorial.html" target="_blank" rel="noreferrer"&gt;https://p3terx.com/archives/aria2-frontend-ariang-tutorial.html&lt;/a&gt;&lt;/p&gt;</description></item><item><title>不使用中间变量交换值</title><link>https://golixp.github.io/posts/%E4%B8%8D%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E5%8F%98%E9%87%8F%E4%BA%A4%E6%8D%A2%E5%80%BC/</link><pubDate>Fri, 17 Jan 2025 16:20:16 +0800</pubDate><guid>https://golixp.github.io/posts/%E4%B8%8D%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E5%8F%98%E9%87%8F%E4%BA%A4%E6%8D%A2%E5%80%BC/</guid><description>&lt;p&gt;如有 a,b 两个变量, 思路是先某种运算使 a 储存 a,b 的&lt;strong&gt;全部信息&lt;/strong&gt;, 然后用 b 与 a 进行逆运算使 b 得到 a 的初始值, 然后用 a 与 b 逆运算赋值给 a.&lt;/p&gt;</description></item><item><title>Quine程序</title><link>https://golixp.github.io/posts/quine%E7%A8%8B%E5%BA%8F/</link><pubDate>Fri, 17 Jan 2025 15:51:39 +0800</pubDate><guid>https://golixp.github.io/posts/quine%E7%A8%8B%E5%BA%8F/</guid><description>&lt;h2 class="relative group"&gt;介绍
+ &lt;div id="介绍" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%bb%8b%e7%bb%8d" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;Quine 程序是指自生成程序, 它不接受输入, 运行它会输出程序源代码.&lt;/p&gt;</description></item><item><title>Nginx部署前后端分离服务</title><link>https://golixp.github.io/posts/service/nginx%E9%83%A8%E7%BD%B2%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%9C%8D%E5%8A%A1/</link><pubDate>Thu, 26 Dec 2024 15:44:10 +0800</pubDate><guid>https://golixp.github.io/posts/service/nginx%E9%83%A8%E7%BD%B2%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%9C%8D%E5%8A%A1/</guid><description>&lt;p&gt;将以下配置添加到 Nginx 配置文件中, 通常在 &lt;code&gt;/etc/nginx/nginx.conf&lt;/code&gt;, 或者在 &lt;code&gt;/etc/nginx/conf.d&lt;/code&gt; 下新建文件, 添加相关配置.&lt;/p&gt;</description></item><item><title>Caddy部署前后端分离服务</title><link>https://golixp.github.io/posts/service/caddy%E9%83%A8%E7%BD%B2%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%9C%8D%E5%8A%A1/</link><pubDate>Tue, 24 Dec 2024 17:24:55 +0800</pubDate><guid>https://golixp.github.io/posts/service/caddy%E9%83%A8%E7%BD%B2%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E6%9C%8D%E5%8A%A1/</guid><description>&lt;p&gt;编写以下配置, 文件名 &lt;code&gt;Caddyfile&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;:6006 {
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	root * /home/guest/web/dist
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	file_server
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	encode zstd gzip
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	handle_path /api/* {
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;		reverse_proxy localhost:6000
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;启动命令为 &lt;code&gt;caddy run --environ --config /home/guest/web/Caddyfile&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Linux挂载NFS磁盘</title><link>https://golixp.github.io/posts/linux/linux%E6%8C%82%E8%BD%BDnfs%E7%A3%81%E7%9B%98/</link><pubDate>Sat, 14 Sep 2024 16:15:51 +0800</pubDate><guid>https://golixp.github.io/posts/linux/linux%E6%8C%82%E8%BD%BDnfs%E7%A3%81%E7%9B%98/</guid><description>&lt;p&gt;执行以下命令安装并挂载&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt install nfs-common
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir -p /mnt/server-disk
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo mount -t nfs 192.168.10.195:/volume1/server-disk /mnt/server-disk&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Ubuntu的Docker容器和镜像消失</title><link>https://golixp.github.io/posts/linux/ubuntu%E7%9A%84docker%E5%AE%B9%E5%99%A8%E5%92%8C%E9%95%9C%E5%83%8F%E6%B6%88%E5%A4%B1/</link><pubDate>Thu, 12 Sep 2024 13:48:57 +0800</pubDate><guid>https://golixp.github.io/posts/linux/ubuntu%E7%9A%84docker%E5%AE%B9%E5%99%A8%E5%92%8C%E9%95%9C%E5%83%8F%E6%B6%88%E5%A4%B1/</guid><description>&lt;p&gt;一次ubuntu Linux机器内存溢出强行重启机器, 启动后docker的容器和镜像全部消失, 后台还有容器相关进程在运行, apt重装docker, 容器和镜像全部都能看到了, 然后在某次正常重启后, 又消失了, 网上查询了很多方式, 都不行, 最后发现是因为snap安装的docker和apt安装的docker共存导致的.&lt;/p&gt;</description></item><item><title>屏蔽部分GPU</title><link>https://golixp.github.io/posts/linux/%E5%B1%8F%E8%94%BD%E9%83%A8%E5%88%86gpu/</link><pubDate>Fri, 26 Jul 2024 14:41:21 +0800</pubDate><guid>https://golixp.github.io/posts/linux/%E5%B1%8F%E8%94%BD%E9%83%A8%E5%88%86gpu/</guid><description>&lt;p&gt;使用&lt;code&gt;lspci | grep NVIDIA&lt;/code&gt;查看:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;3b:00.0 VGA compatible controller: NVIDIA Corporation Device 2684 (rev a1)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;3b:00.1 Audio device: NVIDIA Corporation Device 22ba (rev a1)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;5e:00.0 VGA compatible controller: NVIDIA Corporation Device 2684 (rev a1)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;5e:00.1 Audio device: NVIDIA Corporation Device 22ba (rev a1)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;86:00.0 VGA compatible controller: NVIDIA Corporation Device 2684 (rev a1)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;86:00.1 Audio device: NVIDIA Corporation Device 22ba (rev a1)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;af:00.0 VGA compatible controller: NVIDIA Corporation Device 2684 (rev a1)
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;af:00.1 Audio device: NVIDIA Corporation Device 22ba (rev a1)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;或者&lt;code&gt;nvidia-smi&lt;/code&gt;查看:&lt;/p&gt;</description></item><item><title>Btrfs + Grub2 报错: error: Unknown Filesystem. Grub Rescue&gt;</title><link>https://golixp.github.io/posts/grub2%E5%BC%95%E5%AF%BC%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/</link><pubDate>Thu, 11 Jul 2024 23:21:30 +0800</pubDate><guid>https://golixp.github.io/posts/grub2%E5%BC%95%E5%AF%BC%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/</guid><description>&lt;p&gt;开机报错:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;error: unknown filesystem.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;grub rescue&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;无法进入系统引导页面, 这是grub恢复模式.&lt;/p&gt;</description></item><item><title>部署使用redis</title><link>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8redis/</link><pubDate>Tue, 09 Jul 2024 15:58:28 +0800</pubDate><guid>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8redis/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker run -p 6379:6379 --name redis -d redis&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Ubuntu系统NVIDIA驱动和CUDA安装</title><link>https://golixp.github.io/posts/linux/ubuntu%E7%B3%BB%E7%BB%9Fnvidia%E9%A9%B1%E5%8A%A8%E5%92%8Ccuda%E5%AE%89%E8%A3%85/</link><pubDate>Mon, 01 Jul 2024 16:25:33 +0800</pubDate><guid>https://golixp.github.io/posts/linux/ubuntu%E7%B3%BB%E7%BB%9Fnvidia%E9%A9%B1%E5%8A%A8%E5%92%8Ccuda%E5%AE%89%E8%A3%85/</guid><description>&lt;p&gt;使用Ubuntu官方仓库安装:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;sudo ubuntu-drivers autoinstall&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重启&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt install nvidia-cuda-toolkit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo apt install nvidia-container-toolkit&lt;/code&gt; / &lt;code&gt;sudo apt install nvidia-docker2&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这种方式比传统的去NVIDIA官网下载&lt;code&gt;.run&lt;/code&gt;文件安装更简单, 并且仓库源由Ubuntu官方维护, 兼容性错误更少&lt;/p&gt;</description></item><item><title>MySQL安装相关</title><link>https://golixp.github.io/posts/service/mysql%E5%AE%89%E8%A3%85%E7%9B%B8%E5%85%B3/</link><pubDate>Mon, 01 Jul 2024 16:25:07 +0800</pubDate><guid>https://golixp.github.io/posts/service/mysql%E5%AE%89%E8%A3%85%E7%9B%B8%E5%85%B3/</guid><description>&lt;h2 class="relative group"&gt;安装
+ &lt;div id="安装" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%ae%89%e8%a3%85" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 普通安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker run -itd --name mysql -p 3306:3306 -e &lt;span class="nv"&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;密码 mysql
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 退出自动重启&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker run -itd --restart&lt;span class="o"&gt;=&lt;/span&gt;always --name mysql -p 3306:3306 -e &lt;span class="nv"&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;密码 mysql&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 class="relative group"&gt;备份恢复
+ &lt;div id="备份恢复" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%a4%87%e4%bb%bd%e6%81%a2%e5%a4%8d" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 备份&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mysqldump -u 用户名 -p密码 -h host_address -P port_number database_name &amp;gt; database_dump.sql
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 恢复&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mysql -u 用户名 -p密码 -h host_address -P port_number database_name &amp;lt; database_dump.sql&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Bspwm配置安装</title><link>https://golixp.github.io/posts/linux/bspwm%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</link><pubDate>Mon, 01 Jul 2024 16:23:55 +0800</pubDate><guid>https://golixp.github.io/posts/linux/bspwm%E9%85%8D%E7%BD%AE%E5%AE%89%E8%A3%85/</guid><description>&lt;h1 class="relative group"&gt;安装bspwm和sxhkd
+ &lt;div id="安装bspwm和sxhkd" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%ae%89%e8%a3%85bspwm%e5%92%8csxhkd" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h1&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;yay -S sxhkd bspwm&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;arch会自动创建desktop文件&lt;/p&gt;</description></item><item><title>部署aria2 Pro服务</title><link>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2aria2-pro%E6%9C%8D%E5%8A%A1/</link><pubDate>Mon, 01 Jul 2024 16:23:13 +0800</pubDate><guid>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2aria2-pro%E6%9C%8D%E5%8A%A1/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker run -d &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; --name aria2-pro &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; --restart unless-stopped &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; --log-opt max-size&lt;span class="o"&gt;=&lt;/span&gt;50m &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; --network host &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -e &lt;span class="nv"&gt;RPC_SECRET&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;密码&amp;#34;&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -e &lt;span class="nv"&gt;RPC_PORT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;6800&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -e &lt;span class="nv"&gt;LISTEN_PORT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;6888&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -v &lt;span class="nv"&gt;$PWD&lt;/span&gt;/aria2/config:/config &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -v &lt;span class="nv"&gt;$PWD&lt;/span&gt;/aria2/downloads:/downloads &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; p3terx/aria2-pro&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Windows拼音添加小鹤双拼</title><link>https://golixp.github.io/posts/windows%E6%8B%BC%E9%9F%B3%E6%B7%BB%E5%8A%A0%E5%B0%8F%E9%B9%A4%E5%8F%8C%E6%8B%BC/</link><pubDate>Mon, 01 Jul 2024 16:20:25 +0800</pubDate><guid>https://golixp.github.io/posts/windows%E6%8B%BC%E9%9F%B3%E6%B7%BB%E5%8A%A0%E5%B0%8F%E9%B9%A4%E5%8F%8C%E6%8B%BC/</guid><description>&lt;p&gt;将以下内容报错为&lt;code&gt;add_xiaohe.reg&lt;/code&gt;, 然后执行:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Windows Registry Editor Version 5.00
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;[HKEY_CURRENT_USER\Software\Microsoft\InputMethod\Settings\CHS]
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;Enable Cloud Candidate&amp;#34;=dword:00000000
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;Enable Dynamic Candidate Ranking&amp;#34;=dword:00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;EnableExtraDomainType&amp;#34;=dword:00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;Enable self-learning&amp;#34;=dword:00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;EnableSmartSelfLearning&amp;#34;=dword:00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;EnableLiveSticker&amp;#34;=dword:00000000
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;Enable EUDP&amp;#34;=dword:00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;Enable Double Pinyin&amp;#34;=dword:00000001
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;UserDefinedDoublePinyinScheme0&amp;#34;=&amp;#34;小鹤双拼*2*^*iuvdjhcwfg^xmlnpbksqszxkrltvyovt&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;DoublePinyinScheme&amp;#34;=dword:0000000a&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>ssh动态socks5代理和端口转发</title><link>https://golixp.github.io/posts/linux/ssh%E5%8A%A8%E6%80%81socks5%E4%BB%A3%E7%90%86%E5%92%8C%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</link><pubDate>Mon, 01 Jul 2024 16:18:58 +0800</pubDate><guid>https://golixp.github.io/posts/linux/ssh%E5%8A%A8%E6%80%81socks5%E4%BB%A3%E7%90%86%E5%92%8C%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</guid><description>&lt;h2 class="relative group"&gt;socks5代理
+ &lt;div id="socks5代理" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#socks5%e4%bb%a3%e7%90%86" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ssh -NT -p &lt;span class="m"&gt;52032&lt;/span&gt; -D &lt;span class="m"&gt;6999&lt;/span&gt; cmet@202.141.163.4&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;开启代理后使用&lt;code&gt;Proxy SwitchyOmega&lt;/code&gt;等浏览器插件使用代理&lt;/p&gt;</description></item><item><title>Python允许pip全局下载</title><link>https://golixp.github.io/posts/python/python%E5%85%81%E8%AE%B8pip%E5%85%A8%E5%B1%80%E4%B8%8B%E8%BD%BD/</link><pubDate>Mon, 01 Jul 2024 16:17:40 +0800</pubDate><guid>https://golixp.github.io/posts/python/python%E5%85%81%E8%AE%B8pip%E5%85%A8%E5%B1%80%E4%B8%8B%E8%BD%BD/</guid><description>&lt;p&gt;python3.11以后默认不允许全局pip下载, 需要使用配置开启&lt;/p&gt;</description></item><item><title>Debian容器安装pyaudio</title><link>https://golixp.github.io/posts/linux/debian%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85pyaudio/</link><pubDate>Mon, 01 Jul 2024 16:17:15 +0800</pubDate><guid>https://golixp.github.io/posts/linux/debian%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85pyaudio/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;apt update
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;apt install portaudio19-dev 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install pyaudio&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Python获取当前文件绝对路径</title><link>https://golixp.github.io/posts/python/python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%96%87%E4%BB%B6%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84/</link><pubDate>Mon, 01 Jul 2024 16:15:44 +0800</pubDate><guid>https://golixp.github.io/posts/python/python%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%96%87%E4%BB%B6%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pathlib&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pathlib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Path&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Zerotier安装</title><link>https://golixp.github.io/posts/linux/zerotier%E5%AE%89%E8%A3%85/</link><pubDate>Mon, 01 Jul 2024 16:14:16 +0800</pubDate><guid>https://golixp.github.io/posts/linux/zerotier%E5%AE%89%E8%A3%85/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 安装&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;curl -s https://install.zerotier.com &lt;span class="p"&gt;|&lt;/span&gt; sudo bash
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 设置 zerotier 开机自启&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; zerotier-one.service
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 启动 zerotier 服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;systemctl start zerotier-one.service
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 加入网络&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;zerotier-cli join xxxxx
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 加入中继&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;zerotier-cli orbit xxxx xxxx&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;!-- zerotier-cli join e3918db4837426e5 --&gt;
+&lt;!-- zerotier-cli orbit 00bdcdfc1b 00bdcdfc1b --&gt;
+
+&lt;h2 class="relative group"&gt;搭建moon中继服务
+ &lt;div id="搭建moon中继服务" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%90%ad%e5%bb%bamoon%e4%b8%ad%e7%bb%a7%e6%9c%8d%e5%8a%a1" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;首先:&lt;/p&gt;</description></item><item><title>Systemd管理服务</title><link>https://golixp.github.io/posts/linux/systemd%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1/</link><pubDate>Mon, 01 Jul 2024 16:13:15 +0800</pubDate><guid>https://golixp.github.io/posts/linux/systemd%E7%AE%A1%E7%90%86%E6%9C%8D%E5%8A%A1/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 启动服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo systemctl start docker
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 停止服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo systemctl stop docker 
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 开机启动服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; docker
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 禁止开机启动服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo systemctl disable docker&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 class="relative group"&gt;编写配置文件
+ &lt;div id="编写配置文件" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%bc%96%e5%86%99%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Unit]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Description&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;my_server # 服务名称&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;After&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;network.target&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Service]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;simple&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;User&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;ubuntu # 用户&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Group&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;ubuntu # 用户组&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;WorkingDirectory&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/home/ubuntu # 工作目录&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;ExecStart&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;/home/ubuntu/start.sh # 启动命令&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;Restart&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;on-failure # 异常重启机制 on-failure: 异常退出重启, always: 退出后总是重启&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Install]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;WantedBy&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;multi-user.target&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Netcat传输文件</title><link>https://golixp.github.io/posts/linux/netcat%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6/</link><pubDate>Mon, 01 Jul 2024 15:59:08 +0800</pubDate><guid>https://golixp.github.io/posts/linux/netcat%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 接受端&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;nc -l -p &lt;span class="m"&gt;1234&lt;/span&gt; &amp;gt; file.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 发送端&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;nc 192.168.1.1 &lt;span class="m"&gt;1234&lt;/span&gt; &amp;lt; file.tar.gz&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;适用于scp/rsync不能用的情况&lt;/p&gt;</description></item><item><title>Kvm安装win10虚拟机</title><link>https://golixp.github.io/posts/linux/kvm%E5%AE%89%E8%A3%85win10%E8%99%9A%E6%8B%9F%E6%9C%BA/</link><pubDate>Mon, 01 Jul 2024 15:58:40 +0800</pubDate><guid>https://golixp.github.io/posts/linux/kvm%E5%AE%89%E8%A3%85win10%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virtinst virt-manager
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; --now libvirtd &lt;span class="c1"&gt;# 启动并使能libvirtd服务&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo lsmod &lt;span class="p"&gt;|&lt;/span&gt; grep kvm &lt;span class="c1"&gt;# 确认KVM模块已正确加载&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# VirtIO驱动, 地址: https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo virt-install &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--name&lt;span class="o"&gt;=&lt;/span&gt;windows10 &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--ram&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;8192&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--vcpus&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--cpu host &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--hvm &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--disk &lt;span class="nv"&gt;path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/home/ubuntu/kvm/win10.img,size&lt;span class="o"&gt;=&lt;/span&gt;60,bus&lt;span class="o"&gt;=&lt;/span&gt;virtio,format&lt;span class="o"&gt;=&lt;/span&gt;qcow2 &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--disk &lt;span class="nv"&gt;path&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/data/aria2/downloads/virtio-win-0.1.240.iso,device&lt;span class="o"&gt;=&lt;/span&gt;cdrom &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--cdrom /data/aria2/downloads/Win10_22H2_Chinese_Simplified_x64v1.iso &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--os-type&lt;span class="o"&gt;=&lt;/span&gt;windows &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--os-variant&lt;span class="o"&gt;=&lt;/span&gt;win10 &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--network &lt;span class="nv"&gt;bridge&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;virbr0,model&lt;span class="o"&gt;=&lt;/span&gt;virtio &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--graphics spice,listen&lt;span class="o"&gt;=&lt;/span&gt;0.0.0.0 &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;--video qxl&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>部署使用rabbitmq</title><link>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8rabbitmq/</link><pubDate>Mon, 01 Jul 2024 15:58:04 +0800</pubDate><guid>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8rabbitmq/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker run -itd -p 15672:15672 -p 5672:5672 -e &lt;span class="nv"&gt;RABBITMQ_DEFAULT_USER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;用户名 -e &lt;span class="nv"&gt;RABBITMQ_DEFAULT_PASS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;密码 --name rabbitmq --hostname&lt;span class="o"&gt;=&lt;/span&gt;rabbitmqhostone rabbitmq:management&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;管理界面:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;wget http://localhost:15672/cli/rabbitmqadmin&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Debian容器安装alsa依赖</title><link>https://golixp.github.io/posts/linux/debian%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85alsa%E4%BE%9D%E8%B5%96/</link><pubDate>Mon, 01 Jul 2024 15:55:54 +0800</pubDate><guid>https://golixp.github.io/posts/linux/debian%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85alsa%E4%BE%9D%E8%B5%96/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;apt install alsa-utils
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;apt install libatlas-base-dev&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>添加ssh Key</title><link>https://golixp.github.io/posts/linux/%E6%B7%BB%E5%8A%A0ssh-key/</link><pubDate>Mon, 01 Jul 2024 15:55:05 +0800</pubDate><guid>https://golixp.github.io/posts/linux/%E6%B7%BB%E5%8A%A0ssh-key/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 在机器上添加&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;ssh-key&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; ~/.ssh/authorized_keys
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 直接添加到远程&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ssh-copy-id user@host&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Linux添加用户到用户组</title><link>https://golixp.github.io/posts/linux/linux%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E5%88%B0%E7%94%A8%E6%88%B7%E7%BB%84/</link><pubDate>Mon, 01 Jul 2024 15:54:38 +0800</pubDate><guid>https://golixp.github.io/posts/linux/linux%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E5%88%B0%E7%94%A8%E6%88%B7%E7%BB%84/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo usermod -a -G docker &lt;span class="nv"&gt;$USER&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>部署使用minio</title><link>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8minio/</link><pubDate>Mon, 01 Jul 2024 15:52:03 +0800</pubDate><guid>https://golixp.github.io/posts/service/%E9%83%A8%E7%BD%B2%E4%BD%BF%E7%94%A8minio/</guid><description>&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;docker run -d -p 9000:9000 -p 9090:9090 &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; --name minio &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -e &lt;span class="s2"&gt;&amp;#34;MINIO_ACCESS_KEY=用户名&amp;#34;&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -e &lt;span class="s2"&gt;&amp;#34;MINIO_SECRET_KEY=密码&amp;#34;&lt;/span&gt; &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; -v /data/minio_data:/data &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; minio/minio server &lt;span class="se"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; /data --console-address &lt;span class="s2"&gt;&amp;#34;:9090&amp;#34;&lt;/span&gt; -address &lt;span class="s2"&gt;&amp;#34;:9000&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description></item><item><title>Linux无法挂载NTFS硬盘</title><link>https://golixp.github.io/posts/linux%E6%97%A0%E6%B3%95%E6%8C%82%E8%BD%BDntfs%E7%A1%AC%E7%9B%98/</link><pubDate>Mon, 13 May 2024 14:30:11 +0800</pubDate><guid>https://golixp.github.io/posts/linux%E6%97%A0%E6%B3%95%E6%8C%82%E8%BD%BDntfs%E7%A1%AC%E7%9B%98/</guid><description>&lt;p&gt;Linux KDE桌面环境下挂载NTFS格式移动硬盘失败, 经过检查是因为硬盘某些区块数据是drity的, 通过以下命令修复:&lt;/p&gt;</description></item><item><title>端口扫描工具</title><link>https://golixp.github.io/posts/linux/%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/</link><pubDate>Thu, 25 Apr 2024 16:19:00 +0800</pubDate><guid>https://golixp.github.io/posts/linux/%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 class="relative group"&gt;前言
+ &lt;div id="前言" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%89%8d%e8%a8%80" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;平常经常遇到不知道局域网内服务器ip, 需要使用端口扫描来确定服务器ip的情况, 需要端口扫描的解决方案.&lt;/p&gt;</description></item><item><title>Termux安装ssh</title><link>https://golixp.github.io/posts/termux/termux%E5%AE%89%E8%A3%85ssh/</link><pubDate>Tue, 23 Apr 2024 21:52:18 +0800</pubDate><guid>https://golixp.github.io/posts/termux/termux%E5%AE%89%E8%A3%85ssh/</guid><description>&lt;h2 class="relative group"&gt;安装
+ &lt;div id="安装" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%ae%89%e8%a3%85" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pkg install openssh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 class="relative group"&gt;运行
+ &lt;div id="运行" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e8%bf%90%e8%a1%8c" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;由于Termux没有systemd, 每次需要手动启动sshd&lt;/p&gt;</description></item><item><title>Docker中Python报错 ImportError: libGL.so.1: cannot open shared object file: No such file or directory</title><link>https://golixp.github.io/posts/python/docker%E4%B8%ADpython%E6%8A%A5%E9%94%99importerrorlibgl.so.1/</link><pubDate>Tue, 23 Apr 2024 13:23:18 +0800</pubDate><guid>https://golixp.github.io/posts/python/docker%E4%B8%ADpython%E6%8A%A5%E9%94%99importerrorlibgl.so.1/</guid><description>&lt;p&gt;docker中安装yolo-v8运行报错:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;ImportError: libGL.so.1: cannot open shared object file: No such file or directory&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;查询发现为opencv包缺少动态链接库依赖, 使用apt下载opencv所有系统依赖:&lt;/p&gt;</description></item><item><title>Gradio播放返回.avi格式视频无法播放问题</title><link>https://golixp.github.io/posts/python/gradio%E6%92%AD%E6%94%BE%E8%BF%94%E5%9B%9E.avi%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E6%97%A0%E6%B3%95%E6%92%AD%E6%94%BE%E9%97%AE%E9%A2%98/</link><pubDate>Tue, 23 Apr 2024 11:13:06 +0800</pubDate><guid>https://golixp.github.io/posts/python/gradio%E6%92%AD%E6%94%BE%E8%BF%94%E5%9B%9E.avi%E6%A0%BC%E5%BC%8F%E8%A7%86%E9%A2%91%E6%97%A0%E6%B3%95%E6%92%AD%E6%94%BE%E9%97%AE%E9%A2%98/</guid><description>&lt;h2 class="relative group"&gt;现象
+ &lt;div id="现象" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%8e%b0%e8%b1%a1" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;在服务器外部启动gradio, 输入一个mp4视频, 输出一个avi格式视频, 简单代码如下:&lt;/p&gt;</description></item><item><title>Termux访问手机内部存储</title><link>https://golixp.github.io/posts/termux/termux%E8%AE%BF%E9%97%AE%E6%89%8B%E6%9C%BA%E5%86%85%E9%83%A8%E5%AD%98%E5%82%A8/</link><pubDate>Mon, 22 Apr 2024 17:16:06 +0800</pubDate><guid>https://golixp.github.io/posts/termux/termux%E8%AE%BF%E9%97%AE%E6%89%8B%E6%9C%BA%E5%86%85%E9%83%A8%E5%AD%98%E5%82%A8/</guid><description>&lt;p&gt;首先安装&lt;code&gt;termux-api&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pkg install termux-api&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;之后执行:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;termux-setup-storage&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;之后手机会弹出Termux请求访问内部存储, 允许之后, 会生成&lt;code&gt;~/storage&lt;/code&gt;, 它是一个符号链接, 指向手机内部存储.&lt;/p&gt;</description></item><item><title>Termux换源</title><link>https://golixp.github.io/posts/termux/termux%E6%8D%A2%E6%BA%90/</link><pubDate>Mon, 22 Apr 2024 17:15:55 +0800</pubDate><guid>https://golixp.github.io/posts/termux/termux%E6%8D%A2%E6%BA%90/</guid><description>&lt;p&gt;Termux换源非常简单, 执行&amp;quot;&lt;code&gt;termux-change-repo&lt;/code&gt;, 在cli图形界面选择要更换的源即可.&lt;/p&gt;</description></item><item><title>Linux服务器创建低权限用户并禁止密码登录</title><link>https://golixp.github.io/posts/linux/linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%9B%E5%BB%BA%E4%BD%8E%E6%9D%83%E9%99%90%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</link><pubDate>Fri, 19 Apr 2024 17:37:35 +0800</pubDate><guid>https://golixp.github.io/posts/linux/linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%9B%E5%BB%BA%E4%BD%8E%E6%9D%83%E9%99%90%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</guid><description>&lt;h2 class="relative group"&gt;新建用户
+ &lt;div id="新建用户" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%96%b0%e5%bb%ba%e7%94%a8%e6%88%b7" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo adduser newuser
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 修改密码&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo passwd newuser
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 授予sudo权限&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo usermod -aG sudo newuser&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 class="relative group"&gt;为用户添加公钥
+ &lt;div id="为用户添加公钥" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%b8%ba%e7%94%a8%e6%88%b7%e6%b7%bb%e5%8a%a0%e5%85%ac%e9%92%a5" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;使用&lt;code&gt;ssh-keygen -t rsa -C &amp;quot;newuser&amp;quot; &lt;/code&gt;命令生成一对公私钥, 在服务器上将公钥内容添加到&lt;code&gt;authorized_keys&lt;/code&gt;中.&lt;/p&gt;</description></item><item><title>终端中git信息中文显示为ASCII编码问题</title><link>https://golixp.github.io/posts/%E7%BB%88%E7%AB%AF%E4%B8%ADgit%E4%BF%A1%E6%81%AF%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E4%B8%BAascii%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98/</link><pubDate>Tue, 16 Apr 2024 21:14:19 +0800</pubDate><guid>https://golixp.github.io/posts/%E7%BB%88%E7%AB%AF%E4%B8%ADgit%E4%BF%A1%E6%81%AF%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E4%B8%BAascii%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98/</guid><description>&lt;p&gt;默认配置下的git在修改包含中文内容的时候, 会出现如下情况:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;位于分支 writer
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;您的分支与上游分支 &amp;#39;origin/writer&amp;#39; 一致。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;尚未暂存以备提交的变更：
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; （使用 &amp;#34;git add &amp;lt;文件&amp;gt;...&amp;#34; 更新要提交的内容）
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; （使用 &amp;#34;git restore &amp;lt;文件&amp;gt;...&amp;#34; 丢弃工作区的改动）
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 修改： .gitignore
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; 修改： &amp;#34;content/posts/\346\265\213\350\257\225\346\226\207\347\253\240.md&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;修改尚未加入提交（使用 &amp;#34;git add&amp;#34; 和/或 &amp;#34;git commit -a&amp;#34;）&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;可以看到中文显示为ASCII编码, 这是由于Git的&lt;code&gt;core.quotepath&lt;/code&gt;配置默认是&lt;code&gt;true&lt;/code&gt;, 它会将所有非ASCII字符转换为ASCII编码，因此中文路径和文件名会显示为不可读的字符。&lt;/p&gt;</description></item><item><title>KDE中每次启动应用都申请开启kdewallet的问题</title><link>https://golixp.github.io/posts/kde%E4%B8%AD%E6%AF%8F%E6%AC%A1%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E9%83%BD%E7%94%B3%E8%AF%B7%E5%BC%80%E5%90%AFkdewallet%E7%9A%84%E9%97%AE%E9%A2%98/</link><pubDate>Tue, 16 Apr 2024 21:01:31 +0800</pubDate><guid>https://golixp.github.io/posts/kde%E4%B8%AD%E6%AF%8F%E6%AC%A1%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E9%83%BD%E7%94%B3%E8%AF%B7%E5%BC%80%E5%90%AFkdewallet%E7%9A%84%E9%97%AE%E9%A2%98/</guid><description>&lt;p&gt;编辑文件&lt;code&gt;~/.config/kwalletrc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;[Auto Deny]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="na"&gt;kdewallet&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;codium&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;在其中加入你需要启动的应用名称&lt;/p&gt;</description></item><item><title>批量修改git仓库历史提交作者信息</title><link>https://golixp.github.io/posts/%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9git%E4%BB%93%E5%BA%93%E5%8E%86%E5%8F%B2%E6%8F%90%E4%BA%A4%E4%BD%9C%E8%80%85%E4%BF%A1%E6%81%AF/</link><pubDate>Tue, 16 Apr 2024 19:06:44 +0800</pubDate><guid>https://golixp.github.io/posts/%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9git%E4%BB%93%E5%BA%93%E5%8E%86%E5%8F%B2%E6%8F%90%E4%BA%A4%E4%BD%9C%E8%80%85%E4%BF%A1%E6%81%AF/</guid><description>&lt;p&gt;今天push的时候看到仓库有些commit是使用公司的邮箱提交的, 需要修改所有历史commit中的提交作者信息&lt;/p&gt;</description></item><item><title>Python脚本编写-匹配同时间段的音频和图片</title><link>https://golixp.github.io/posts/python/python%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99-%E5%8C%B9%E9%85%8D%E5%90%8C%E6%97%B6%E9%97%B4%E6%AE%B5%E7%9A%84%E9%9F%B3%E9%A2%91%E5%92%8C%E5%9B%BE%E7%89%87/</link><pubDate>Tue, 16 Apr 2024 10:52:52 +0800</pubDate><guid>https://golixp.github.io/posts/python/python%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99-%E5%8C%B9%E9%85%8D%E5%90%8C%E6%97%B6%E9%97%B4%E6%AE%B5%E7%9A%84%E9%9F%B3%E9%A2%91%E5%92%8C%E5%9B%BE%E7%89%87/</guid><description>&lt;h2 class="relative group"&gt;需求
+ &lt;div id="需求" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%9c%80%e6%b1%82" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;现有两个目录, 其中图片&lt;code&gt;image/source/&lt;/code&gt;目录部分内容:&lt;/p&gt;</description></item><item><title>使用yolo-v8检测视频中的老鼠</title><link>https://golixp.github.io/posts/python/%E4%BD%BF%E7%94%A8yolo-v8%E6%A3%80%E6%B5%8B%E8%A7%86%E9%A2%91%E4%B8%AD%E7%9A%84%E8%80%81%E9%BC%A0/</link><pubDate>Mon, 15 Apr 2024 17:02:22 +0800</pubDate><guid>https://golixp.github.io/posts/python/%E4%BD%BF%E7%94%A8yolo-v8%E6%A3%80%E6%B5%8B%E8%A7%86%E9%A2%91%E4%B8%AD%E7%9A%84%E8%80%81%E9%BC%A0/</guid><description>&lt;h2 class="relative group"&gt;创建conda环境
+ &lt;div id="创建conda环境" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%88%9b%e5%bb%baconda%e7%8e%af%e5%a2%83" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;conda create -n moused &lt;span class="nv"&gt;python&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;3.10&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 class="relative group"&gt;进入conda环境
+ &lt;div id="进入conda环境" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e8%bf%9b%e5%85%a5conda%e7%8e%af%e5%a2%83" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;conda activate moused&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 class="relative group"&gt;配置环境
+ &lt;div id="配置环境" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%85%8d%e7%bd%ae%e7%8e%af%e5%a2%83" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;mkdir moused
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; moused
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pip install ultralytics&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 class="relative group"&gt;预测
+ &lt;div id="预测" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%a2%84%e6%b5%8b" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;yolo detect predict &lt;span class="nv"&gt;model&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;yolov8x.pt &lt;span class="nv"&gt;source&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;mouse.mp4 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;效果并不好, 需要使用自定义数据集微调.&lt;/p&gt;</description></item></channel></rss>
