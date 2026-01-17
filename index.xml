@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lixp的Blog</title><link>https://golixp.github.io/</link><description>Recent content on Lixp的Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>© 2026 Lixp. [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)</copyright><lastBuildDate>Sat, 17 Jan 2026 19:03:25 +0800</lastBuildDate><atom:link href="https://golixp.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>VirtualBox安装ArchLinux虚拟机增强</title><link>https://golixp.github.io/posts/linux/virtualbox%E5%AE%89%E8%A3%85archlinux%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A2%9E%E5%BC%BA/</link><pubDate>Sat, 17 Jan 2026 19:03:25 +0800</pubDate><guid>https://golixp.github.io/posts/linux/virtualbox%E5%AE%89%E8%A3%85archlinux%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A2%9E%E5%BC%BA/</guid><description>&lt;p&gt;先尝试卸载之前安装的残留:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lixp的Blog</title><link>https://golixp.github.io/</link><description>Recent content on Lixp的Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>© 2026 Lixp. [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)</copyright><lastBuildDate>Sun, 18 Jan 2026 01:17:50 +0800</lastBuildDate><atom:link href="https://golixp.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>gitignore白名单写法</title><link>https://golixp.github.io/posts/gitignore%E7%99%BD%E5%90%8D%E5%8D%95%E5%86%99%E6%B3%95/</link><pubDate>Sun, 18 Jan 2026 01:17:50 +0800</pubDate><guid>https://golixp.github.io/posts/gitignore%E7%99%BD%E5%90%8D%E5%8D%95%E5%86%99%E6%B3%95/</guid><description>&lt;p&gt;&lt;code&gt;.gitignore&lt;/code&gt; 写入配置如下:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;pre tabindex="0"&gt;&lt;code class="language-gitignore" data-lang="gitignore"&gt;# 白名单模式 .gitignore 规则
+
+# 忽略所有内容并允许追踪子目录内容
+*
+!*/
+
+# README 和 gitignore 加入白名单
+!/.gitignore
+!README*&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;具体原理为: 首先使用 &lt;code&gt;*&lt;/code&gt; 先忽略全部文件与目录, 然后使用 &lt;code&gt;!*/&lt;/code&gt; 允许 Git 追踪子目录结构, 然后就可以用 &lt;code&gt;!&lt;/code&gt; + 文件名来加入需要 Git 追踪的文件.&lt;/p&gt;</description></item><item><title>Linux 下 Btrfs 文件系统快照</title><link>https://golixp.github.io/posts/linux/linux%E4%B8%8Bbtrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%BF%AB%E7%85%A7/</link><pubDate>Sun, 18 Jan 2026 00:06:47 +0800</pubDate><guid>https://golixp.github.io/posts/linux/linux%E4%B8%8Bbtrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%BF%AB%E7%85%A7/</guid><description>&lt;h2 class="relative group"&gt;安装系统快照备份
+ &lt;div id="安装系统快照备份" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%ae%89%e8%a3%85%e7%b3%bb%e7%bb%9f%e5%bf%ab%e7%85%a7%e5%a4%87%e4%bb%bd" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;常用快照组件有 TimeShift 和 Snapper .&lt;/p&gt;</description></item><item><title>Zsh 安装配置</title><link>https://golixp.github.io/posts/linux/zsh%E9%85%8D%E7%BD%AE/</link><pubDate>Sun, 18 Jan 2026 00:06:38 +0800</pubDate><guid>https://golixp.github.io/posts/linux/zsh%E9%85%8D%E7%BD%AE/</guid><description>&lt;h2 class="relative group"&gt;安装 Shell
+ &lt;div id="安装-shell" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%ae%89%e8%a3%85-shell" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;Arch Linux 主流选择有 Fish 和 Zsh, Fish 开箱即用但是不兼容 Bash, 配置为系统默认 Shell 会有很多问题, Zsh 兼容 Bash, 可以作为系统默认 Shell, 但是配置比较复杂并且启动速度不如 Fish.&lt;/p&gt;</description></item><item><title>Fcitx5+Rime 输入法安装</title><link>https://golixp.github.io/posts/linux/fcitx5+rime%E8%BE%93%E5%85%A5%E6%B3%95%E5%AE%89%E8%A3%85/</link><pubDate>Sun, 18 Jan 2026 00:06:24 +0800</pubDate><guid>https://golixp.github.io/posts/linux/fcitx5+rime%E8%BE%93%E5%85%A5%E6%B3%95%E5%AE%89%E8%A3%85/</guid><description>&lt;p&gt;使用 Arch Linux 系统, 首先安装 Fcitx5 和 Rime.&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo pacman -S fcitx5-im fcitx5-rime&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;/etc/environment&lt;/code&gt;中添加以下环境变量&lt;/p&gt;</description></item><item><title>双系统更改 Grub 启动顺序</title><link>https://golixp.github.io/posts/linux/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%94%B9grub%E5%90%AF%E5%8A%A8%E9%A1%BA%E5%BA%8F/</link><pubDate>Sun, 18 Jan 2026 00:05:50 +0800</pubDate><guid>https://golixp.github.io/posts/linux/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%94%B9grub%E5%90%AF%E5%8A%A8%E9%A1%BA%E5%BA%8F/</guid><description>&lt;p&gt;如果使用了 Timeshift 或者 Snapper 的快照功能, 安装 &lt;code&gt;grub-btrfs&lt;/code&gt; 实现在 Grub 界面直接从快照启动, 这样在系统挂掉后可以从快照启动进入系统而不需要 LiveCD .&lt;/p&gt;</description></item><item><title>Helix 配置</title><link>https://golixp.github.io/posts/hleix%E9%85%8D%E7%BD%AE/</link><pubDate>Sun, 18 Jan 2026 00:04:59 +0800</pubDate><guid>https://golixp.github.io/posts/hleix%E9%85%8D%E7%BD%AE/</guid><description>&lt;p&gt;首先在 Arch Linux 中安装:&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;yay -S helix&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;ArchLinux 中 helix 的默认别名并不是 hx, 可以手动软链接&lt;/p&gt;
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo ln -s /usr/bin/helix /usr/local/bin/hx&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;配置文件默认路径在 &lt;code&gt;~/.config/helix/config.toml&lt;/code&gt; , 写入以下内容:&lt;/p&gt;</description></item><item><title>VirtualBox安装ArchLinux虚拟机增强</title><link>https://golixp.github.io/posts/linux/virtualbox%E5%AE%89%E8%A3%85archlinux%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A2%9E%E5%BC%BA/</link><pubDate>Sat, 17 Jan 2026 19:03:25 +0800</pubDate><guid>https://golixp.github.io/posts/linux/virtualbox%E5%AE%89%E8%A3%85archlinux%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A2%9E%E5%BC%BA/</guid><description>&lt;p&gt;先尝试卸载之前安装的残留:&lt;/p&gt;
 &lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;sudo /opt/VBoxGuestAdditions-*/uninstall.sh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;然后安装:&lt;/p&gt;
 &lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;# 1. 安装工具包
