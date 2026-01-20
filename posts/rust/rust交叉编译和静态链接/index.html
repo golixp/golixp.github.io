@@ -745,7 +745,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=c1>// ...
 </span></span><span class=line><span class=cl>    <span class=s2>&#34;PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&#34;</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>    <span class=c1>// ...
 </span></span></span><span class=line><span class=cl><span class=p>]</span><span class=err>,</span>
-</span></span><span class=line><span class=cl><span class=err>//</span> <span class=err>...</span></span></span></code></pre></div><p><code>HTTPS_PROXY</code>使用了<code>http://127.0.0.1:7897</code>, 而没有被覆盖, 似乎是在哪一步被更高优先级的操作覆盖了, 查看cross源码, 在<code>src/docker/shared.rs</code>下发现:</p><div class="code-block highlight is-open tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=err>//</span> <span class=err>...</span></span></span></code></pre></div><p><code>HTTPS_PROXY</code>使用了<code>http://127.0.0.1:7897</code>, 而没有被覆盖, 似乎是在哪一步被更高优先级的操作覆盖了, 查看cross源码, 在<code>src/docker/shared.rs</code>下发现:</p><div class="code-block highlight is-closed tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between

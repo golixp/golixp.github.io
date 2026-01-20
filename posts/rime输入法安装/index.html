@@ -75,7 +75,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>patch:
 </span></span><span class=line><span class=cl>  &#34;含列表的设定项/@after last&#34;: 在列表最后一个元素之后插入新的设定值（不建议在补靪中使用）
 </span></span><span class=line><span class=cl>  &#34;含列表的设定项/@next&#34;: 在列表最后一个元素之后插入新的设定值（不建议在补靪中使用）
 </span></span><span class=line><span class=cl>  &#34;含列表的设定项/+&#34;: 与列表合并的设定值（必须为列表）
-</span></span><span class=line><span class=cl>  &#34;含字典的设定项/+&#34;: 与字典合并的设定值（必须为字典，注意YAML字典的无序性）</span></span></code></pre></div><p>在 Arch Linux 下可以使用系统包管理器安装雾凇方案, 然后在用户配置文件引入雾凇方案, 如果是 Windows 可以直接把项目文件粘贴到用户目录, 然后添加自己的补丁来覆盖默认配置.</p><p>创建 <code>default.custom.yaml</code> 来覆盖 <code>default.yaml</code> 中的默认全局配置.</p><div class="code-block highlight is-open tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl>  &#34;含字典的设定项/+&#34;: 与字典合并的设定值（必须为字典，注意YAML字典的无序性）</span></span></code></pre></div><p>在 Arch Linux 下可以使用系统包管理器安装雾凇方案, 然后在用户配置文件引入雾凇方案, 如果是 Windows 可以直接把项目文件粘贴到用户目录, 然后添加自己的补丁来覆盖默认配置.</p><p>创建 <code>default.custom.yaml</code> 来覆盖 <code>default.yaml</code> 中的默认全局配置.</p><div class="code-block highlight is-closed tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -148,7 +148,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>patch:
 </span></span><span class=line><span class=cl>      Shift_L: noop           # commit_code | commit_text | inline_ascii | clear | noop
 </span></span><span class=line><span class=cl>      Shift_R: noop           # commit_code | commit_text | inline_ascii | clear | noop
 </span></span><span class=line><span class=cl>      Control_L: noop         # commit_code | commit_text | inline_ascii | clear | noop
-</span></span><span class=line><span class=cl>      Control_R: noop         # commit_code | commit_text | inline_ascii | clear | noop</span></span></code></pre></div><p>注意 <code>__include: rime_ice_suggestion:/</code> 是 Arch Linux 中导入包管理器安装的雾凇方案, Windows 中则不需要这一行.</p><p>同样也可以修改其它文件, 比如要针对小鹤双拼 <code>double_pinyin_flypy.schema.yaml</code> 方案单独修改, 可以创建文件 <code>double_pinyin_flypy.custom.yaml</code> 来修改, 如下为修改输入法默认英文标点.</p><div class="code-block highlight is-open tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl>      Control_R: noop         # commit_code | commit_text | inline_ascii | clear | noop</span></span></code></pre></div><p>注意 <code>__include: rime_ice_suggestion:/</code> 是 Arch Linux 中导入包管理器安装的雾凇方案, Windows 中则不需要这一行.</p><p>同样也可以修改其它文件, 比如要针对小鹤双拼 <code>double_pinyin_flypy.schema.yaml</code> 方案单独修改, 可以创建文件 <code>double_pinyin_flypy.custom.yaml</code> 来修改, 如下为修改输入法默认英文标点.</p><div class="code-block highlight is-closed tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -448,7 +448,7 @@ group-[.is-closed]:!tw-max-h-0
 group-[.is-wrap]:tw-text-wrap
 tw-overflow-y-hidden
 tw-overflow-x-auto
-tw-scrollbar-thin"><span class=line><span class=cl>yay -S fcitx5-skin-ori-git</span></span></code></pre></div><h2 id=windows class=headerLink><a href=#windows class=header-mark></a>Windows</h2><p>首先在 Rime 官网 <a href=https://rime.im/download/ target=_blank rel="noopener noreferrer">https://rime.im/download/</a> 下载 Windows 版的 Rime (小狼毫), 安装之后进入配置目录, 一般是 <code>C:\Users\Lixp\Application Data\Rime\</code> , 右键托盘点击用户配置目录可以直接打开.</p><p>之后下载雾凇方案配置文件, 可以直接使用 Git Clone 项目, 或者在 <a href=https://github.com/iDvel/rime-ice/releases target=_blank rel="noopener noreferrer">https://github.com/iDvel/rime-ice/releases</a> 下载发行包, 下载后将所有内容复制到用户目录, 可以删除 <code>.github</code> 目录, 它是项目在 GitHub 的一些配置.</p><p>之后放入自己的 <code>default.custom.yaml</code> 配置, 如下展示</p><div class="code-block highlight is-open tw-group tw-my-2"><div class="tw-flex
+tw-scrollbar-thin"><span class=line><span class=cl>yay -S fcitx5-skin-ori-git</span></span></code></pre></div><h2 id=windows class=headerLink><a href=#windows class=header-mark></a>Windows</h2><p>首先在 Rime 官网 <a href=https://rime.im/download/ target=_blank rel="noopener noreferrer">https://rime.im/download/</a> 下载 Windows 版的 Rime (小狼毫), 安装之后进入配置目录, 一般是 <code>C:\Users\Lixp\Application Data\Rime\</code> , 右键托盘点击用户配置目录可以直接打开.</p><p>之后下载雾凇方案配置文件, 可以直接使用 Git Clone 项目, 或者在 <a href=https://github.com/iDvel/rime-ice/releases target=_blank rel="noopener noreferrer">https://github.com/iDvel/rime-ice/releases</a> 下载发行包, 下载后将所有内容复制到用户目录, 可以删除 <code>.github</code> 目录, 它是项目在 GitHub 的一些配置.</p><p>之后放入自己的 <code>default.custom.yaml</code> 配置, 如下展示</p><div class="code-block highlight is-closed tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between

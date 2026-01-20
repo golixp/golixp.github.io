@@ -159,7 +159,7 @@ group-[.is-closed]:!tw-max-h-0
 group-[.is-wrap]:tw-text-wrap
 tw-overflow-y-hidden
 tw-overflow-x-auto
-tw-scrollbar-thin"><span class=line><span class=cl>yay -S archlinuxcn/rime-ice-git</span></span></code></pre></div><p>下载后会将配置文件添加到 <code>/usr/share/rime-data</code> 下, 这里是 <code>fcitx5-rime</code> 的默认配置文件路径之一, 之后在用户路径下编写配置引用和修改其中的一些配置, 在 <code>~/.local/share/fcitx5/rime/</code> 下创建文件 <code>default.custom.yaml</code> , 写入以下内容:</p><div class="code-block highlight is-open tw-group tw-my-2"><div class="tw-flex
+tw-scrollbar-thin"><span class=line><span class=cl>yay -S archlinuxcn/rime-ice-git</span></span></code></pre></div><p>下载后会将配置文件添加到 <code>/usr/share/rime-data</code> 下, 这里是 <code>fcitx5-rime</code> 的默认配置文件路径之一, 之后在用户路径下编写配置引用和修改其中的一些配置, 在 <code>~/.local/share/fcitx5/rime/</code> 下创建文件 <code>default.custom.yaml</code> , 写入以下内容:</p><div class="code-block highlight is-closed tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -232,7 +232,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>patch:
 </span></span><span class=line><span class=cl>      Shift_L: noop           # commit_code | commit_text | inline_ascii | clear | noop
 </span></span><span class=line><span class=cl>      Shift_R: noop           # commit_code | commit_text | inline_ascii | clear | noop
 </span></span><span class=line><span class=cl>      Control_L: noop         # commit_code | commit_text | inline_ascii | clear | noop
-</span></span><span class=line><span class=cl>      Control_R: noop         # commit_code | commit_text | inline_ascii | clear | noop</span></span></code></pre></div><p><code>default.custom.yaml</code> 含义为修改默认配置, <code>__include: rime_ice_suggestion:/</code> 导入了配置, 在下面可以覆盖配置中的一些键值.</p><p>同样也可以修改其它文件, 比如要针对小鹤双拼 <code>double_pinyin_flypy.schema.yaml</code> 方案单独修改, 可以创建文件 <code>double_pinyin_flypy.custom.yaml</code> 来修改, 如下为修改输入法默认英文标点.</p><div class="code-block highlight is-open tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl>      Control_R: noop         # commit_code | commit_text | inline_ascii | clear | noop</span></span></code></pre></div><p><code>default.custom.yaml</code> 含义为修改默认配置, <code>__include: rime_ice_suggestion:/</code> 导入了配置, 在下面可以覆盖配置中的一些键值.</p><p>同样也可以修改其它文件, 比如要针对小鹤双拼 <code>double_pinyin_flypy.schema.yaml</code> 方案单独修改, 可以创建文件 <code>double_pinyin_flypy.custom.yaml</code> 来修改, 如下为修改输入法默认英文标点.</p><div class="code-block highlight is-closed tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between

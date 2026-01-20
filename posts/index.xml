@@ -1,4 +1,24 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Lixp Blog</title><link>https://golixp.github.io/posts/</link><description>所有文章 | Lixp Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>golixp@outlook.com (Lixp)</managingEditor><webMaster>golixp@outlook.com (Lixp)</webMaster><lastBuildDate>Mon, 19 Jan 2026 15:23:54 +0800</lastBuildDate><atom:link href="https://golixp.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Ghostty冷启动优化</title><link>https://golixp.github.io/posts/ghostty%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/</link><pubDate>Mon, 19 Jan 2026 15:23:54 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/ghostty%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/</guid><description><![CDATA[<p>相比于 Alacritty, Ghostty 虽然功能更多但是冷启动速度更慢, 要加快冷启动速度, 官方文档提到可以使在图形界面登录时就启动 Ghostty.</p>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Lixp Blog</title><link>https://golixp.github.io/posts/</link><description>所有文章 | Lixp Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>golixp@outlook.com (Lixp)</managingEditor><webMaster>golixp@outlook.com (Lixp)</webMaster><lastBuildDate>Tue, 20 Jan 2026 19:58:47 +0800</lastBuildDate><atom:link href="https://golixp.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Podman安装配置</title><link>https://golixp.github.io/posts/linux/podman%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link><pubDate>Tue, 20 Jan 2026 19:58:47 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/podman%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid><description><![CDATA[<p>在 Arch Linux 中可以用以下命令安装 Podman:</p>
+<div class="code-block highlight is-open   tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">sh</p>]]></description></item><item><title>Ghostty冷启动优化</title><link>https://golixp.github.io/posts/ghostty%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/</link><pubDate>Mon, 19 Jan 2026 15:23:54 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/ghostty%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/</guid><description><![CDATA[<p>相比于 Alacritty, Ghostty 虽然功能更多但是冷启动速度更慢, 要加快冷启动速度, 官方文档提到可以使在图形界面登录时就启动 Ghostty.</p>
 <h2 id="使用-systemd-启动服务" class="headerLink">
     <a href="#%e4%bd%bf%e7%94%a8-systemd-%e5%90%af%e5%8a%a8%e6%9c%8d%e5%8a%a1" class="header-mark"></a>使用 Systemd 启动服务</h2><p>使用以下命令将 Ghostty 服务添加到用户服务中:</p>]]></description></item><item><title>Markdown代码块的标示</title><link>https://golixp.github.io/posts/markdown%E4%BB%A3%E7%A0%81%E5%9D%97%E7%9A%84%E6%A0%87%E7%A4%BA/</link><pubDate>Sun, 18 Jan 2026 17:34:15 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/markdown%E4%BB%A3%E7%A0%81%E5%9D%97%E7%9A%84%E6%A0%87%E7%A4%BA/</guid><description><![CDATA[<table>
   <thead>
@@ -158,5 +178,4 @@
       aria-hidden="true">
           <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">text</p>]]></description></item><item><title>Rime输入法安装</title><link>https://golixp.github.io/posts/rime%E8%BE%93%E5%85%A5%E6%B3%95%E5%AE%89%E8%A3%85/</link><pubDate>Tue, 13 Jan 2026 19:33:46 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/rime%E8%BE%93%E5%85%A5%E6%B3%95%E5%AE%89%E8%A3%85/</guid><description><![CDATA[<h2 id="配置文件" class="headerLink">
-    <a href="#%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6" class="header-mark"></a>配置文件</h2><p>使用雾凇拼音方案(Rime-ICE), Rime-ICE 是社区维护的 Rime 配置, 项目地址为 <a href="https://github.com/iDvel/rime-ice" target="_blank" rel="noopener noreferrer">https://github.com/iDvel/rime-ice</a> , 集成了很多常用功能, 支持双拼和全拼, 由于会经常更新, 所以用户自己对配置文件直接修改会在更新时被覆盖掉, 所以推荐用 Rime 中对配置文件 Patch 的机制来嵌入自己的配置内容, Rime 官方文档的配置规则为以下内容:</p>]]></description></item></channel></rss>
+          <p class="tw-select-none !tw-my-1">text</p>]]></description></item></channel></rss>

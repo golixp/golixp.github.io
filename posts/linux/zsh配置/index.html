@@ -166,7 +166,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=nv>zsh_plugins</s
 </span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[[</span> ! <span class=si>${</span><span class=nv>zsh_plugins</span><span class=si>}</span>.zsh -nt <span class=si>${</span><span class=nv>zsh_plugins</span><span class=si>}</span>.txt <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
 </span></span><span class=line><span class=cl>  antidote bundle &lt;<span class=si>${</span><span class=nv>zsh_plugins</span><span class=si>}</span>.txt &gt;<span class=p>|</span><span class=si>${</span><span class=nv>zsh_plugins</span><span class=si>}</span>.zsh
 </span></span><span class=line><span class=cl><span class=k>fi</span>
-</span></span><span class=line><span class=cl><span class=nb>source</span> <span class=si>${</span><span class=nv>zsh_plugins</span><span class=si>}</span>.zsh</span></span></code></pre></div><p>这是官网推荐的高性能启动方式.</p><p>之后配置插件列表, 在 <code>~/.zsh_plugins.txt</code> 下添加内容:</p><div class="code-block highlight is-open tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=nb>source</span> <span class=si>${</span><span class=nv>zsh_plugins</span><span class=si>}</span>.zsh</span></span></code></pre></div><p>这是官网推荐的高性能启动方式.</p><p>之后配置插件列表, 在 <code>~/.zsh_plugins.txt</code> 下添加内容:</p><div class="code-block highlight is-closed tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -280,7 +280,7 @@ group-[.is-closed]:!tw-max-h-0
 group-[.is-wrap]:tw-text-wrap
 tw-overflow-y-hidden
 tw-overflow-x-auto
-tw-scrollbar-thin"><span class=line><span class=cl>yay -S eza fzf zoxide</span></span></code></pre></div><p>如果不想依赖外部二进制程序, 可以改用纯 zsh 版本的 zsh-z 插件替代 zoxide.</p><p>然后打开配置文件 <code>.zshrc</code> 目录, 添加插件配置项:</p><div class="code-block highlight is-open tw-group tw-my-2"><div class="tw-flex
+tw-scrollbar-thin"><span class=line><span class=cl>yay -S eza fzf zoxide</span></span></code></pre></div><p>如果不想依赖外部二进制程序, 可以改用纯 zsh 版本的 zsh-z 插件替代 zoxide.</p><p>然后打开配置文件 <code>.zshrc</code> 目录, 添加插件配置项:</p><div class="code-block highlight is-closed tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
