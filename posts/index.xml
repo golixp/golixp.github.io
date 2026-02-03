@@ -1,4 +1,131 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Lixp Blog</title><link>https://golixp.github.io/posts/</link><description>所有文章 | Lixp Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>golixp@outlook.com (Lixp)</managingEditor><webMaster>golixp@outlook.com (Lixp)</webMaster><lastBuildDate>Fri, 23 Jan 2026 00:04:24 +0800</lastBuildDate><atom:link href="https://golixp.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Linux创建普通用户并禁止密码登录</title><link>https://golixp.github.io/posts/linux/linux%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</link><pubDate>Fri, 23 Jan 2026 00:04:24 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/linux%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</guid><description><![CDATA[<div class="code-block highlight is-closed   tw-group tw-my-2">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Lixp Blog</title><link>https://golixp.github.io/posts/</link><description>所有文章 | Lixp Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>golixp@outlook.com (Lixp)</managingEditor><webMaster>golixp@outlook.com (Lixp)</webMaster><lastBuildDate>Sat, 31 Jan 2026 22:01:00 +0800</lastBuildDate><atom:link href="https://golixp.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Linux窗口管理器无线网络无法自动连接</title><link>https://golixp.github.io/posts/linux/linux%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E6%97%A0%E6%B3%95%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5/</link><pubDate>Sat, 31 Jan 2026 22:01:00 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/linux%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E6%97%A0%E6%B3%95%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5/</guid><description>&lt;p>如果是先装的 KDE 再装的其它窗口管理器, NetworkManager 可能会被配置为读取 KWallet 的密码配置, 在脱离了 KDE 环境后, 可能会出现无法保存 WIFI 密码的情况, 每次都得手动输入密码, 可以在 &lt;code>/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf&lt;/code> 加入如下配置:&lt;/p></description></item><item><title>Linux人脸认证配置</title><link>https://golixp.github.io/posts/linux/linux%E4%BA%BA%E8%84%B8%E8%AE%A4%E8%AF%81%E9%85%8D%E7%BD%AE/</link><pubDate>Sat, 31 Jan 2026 22:00:00 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/linux%E4%BA%BA%E8%84%B8%E8%AE%A4%E8%AF%81%E9%85%8D%E7%BD%AE/</guid><description><![CDATA[<h2 id="确认红外摄像头硬件信息" class="headerLink">
+    <a href="#%e7%a1%ae%e8%ae%a4%e7%ba%a2%e5%a4%96%e6%91%84%e5%83%8f%e5%a4%b4%e7%a1%ac%e4%bb%b6%e4%bf%a1%e6%81%af" class="header-mark"></a>确认红外摄像头硬件信息</h2><p>首先需要确认电脑是否有红外摄像头, 输入 <code>v4l2-ctl --list-devices</code> 命令观察输出:</p>
+<div class="code-block highlight is-open   tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">text</p>]]></description></item><item><title>DoomEmacs安装</title><link>https://golixp.github.io/posts/linux/doomemacs%E5%AE%89%E8%A3%85/</link><pubDate>Sat, 31 Jan 2026 21:59:00 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/doomemacs%E5%AE%89%E8%A3%85/</guid><description><![CDATA[<h2 id="基础安装" class="headerLink">
+    <a href="#%e5%9f%ba%e7%a1%80%e5%ae%89%e8%a3%85" class="header-mark"></a>基础安装</h2><p>首先执行命令:</p>
+<div class="code-block highlight is-open   tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">bash</p>
+      </button>
+
+   <div class="tw-flex">
+      <button 
+        class="
+          line-number-button
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.show-line-numbers]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle line numbers"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M61.77 401l17.5-20.15a19.92 19.92 0 0 0 5.07-14.19v-3.31C84.34 356 80.5 352 73 352H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h22.83a157.41 157.41 0 0 0-11 12.31l-5.61 7c-4 5.07-5.25 10.13-2.8 14.88l1.05 1.93c3 5.76 6.29 7.88 12.25 7.88h4.73c10.33 0 15.94 2.44 15.94 9.09 0 4.72-4.2 8.22-14.36 8.22a41.54 41.54 0 0 1-15.47-3.12c-6.49-3.88-11.74-3.5-15.6 3.12l-5.59 9.31c-3.72 6.13-3.19 11.72 2.63 15.94 7.71 4.69 20.38 9.44 37 9.44 34.16 0 48.5-22.75 48.5-44.12-.03-14.38-9.12-29.76-28.73-34.88zM496 224H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM16 160h64a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H64V40a8 8 0 0 0-8-8H32a8 8 0 0 0-7.14 4.42l-8 16A8 8 0 0 0 24 64h8v64H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm-3.91 160H80a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H41.32c3.29-10.29 48.34-18.68 48.34-56.44 0-29.06-25-39.56-44.47-39.56-21.36 0-33.8 10-40.46 18.75-4.37 5.59-3 10.84 2.8 15.37l8.58 6.88c5.61 4.56 11 2.47 16.12-2.44a13.44 13.44 0 0 1 9.46-3.84c3.33 0 9.28 1.56 9.28 8.75C51 248.19 0 257.31 0 304.59v4C0 316 5.08 320 12.09 320z"/></svg></button>
+
+      <button 
+        class="
+          wrap-code-button
+          tw-select-none 
+          tw-mx-2 
+          tw-hidden 
+          group-[.is-open]:tw-block 
+          group-[.is-wrap]:tw-text-fgColor-link 
+          print:!tw-hidden" 
+        title="Toggle code wrap"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg></button>
+      
+      <button 
+        class="
+          copy-code-button
+          tw-select-none
+          tw-mx-2 
+          tw-hidden
+          group-[.is-open]:tw-block
+          hover:tw-text-fgColor-link 
+          print:!tw-hidden"
+        title="Copy code">
+          <span class="copy-icon tw-block"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"/></svg></span>
+          <span class="check-icon tw-hidden"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg></span>
+      </button>
+        
+      <button 
+        class="
+          tw-select-none 
+          tw-mx-2 
+          tw-block 
+          group-[.is-open]:tw-hidden 
+          print:!tw-hidden" 
+        disabled
+        aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"/></svg></button>
+    </div>
+  </div>
+  <pre style="counter-reset: codeblock;" class="tw-block tw-m-0 tw-p-0"><code 
+    id="codeblock-id-1" 
+    class="
+      chroma 
+      !tw-block 
+      tw-p-0
+      tw-m-0
+      tw-transition-[max-height] 
+      tw-duration-500 
+      tw-ease-in-out 
+      group-[.is-closed]:!tw-max-h-0 
+      group-[.is-wrap]:tw-text-wrap
+      tw-overflow-y-hidden
+      tw-overflow-x-auto
+      tw-scrollbar-thin
+      "><span class="line"><span class="cl">git clone --depth <span class="m">1</span> https://github.com/doomemacs/doomemacs ~/.config/emacs
+</span></span><span class="line"><span class="cl">~/.config/emacs/bin/doom install</span></span></code></pre>
+</div>
+<p>之后可以运行 之后可以运行以下命令来检查系统缺少二进制依赖:</p>]]></description></item><item><title>Linux蓝牙连接</title><link>https://golixp.github.io/posts/linux/linux%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</link><pubDate>Sat, 31 Jan 2026 21:58:00 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/linux%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</guid><description><![CDATA[<h2 id="bluetoothctl-命令行连接" class="headerLink">
+    <a href="#bluetoothctl-%e5%91%bd%e4%bb%a4%e8%a1%8c%e8%bf%9e%e6%8e%a5" class="header-mark"></a>bluetoothctl 命令行连接</h2><p>使用 <code>bluetoothctl</code> 进入蓝牙交互界面</p>
+<ul>
+<li><code>scan on</code> / <code>scan off</code> 开始和停止扫描</li>
+<li><code>pair XX:XX:XX:XX:XX:XX</code> 发起配对, 如果设备有确认码, 终端会提示你输入 yes 来确认</li>
+<li><code>trust XX:XX:XX:XX:XX:XX</code> 信任设备, 下次断开后自动连接</li>
+<li><code>connect XX:XX:XX:XX:XX:XX</code> 建立连接</li>
+<li><code>disconnect XX:XX:XX:XX:XX:XX</code> 断开当前连接，但保留配对信息</li>
+<li><code>remove XX:XX:XX:XX:XX:XX</code> 删除配对信息</li>
+</ul>
+<h2 id="常见问题修复" class="headerLink">
+    <a href="#%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98%e4%bf%ae%e5%a4%8d" class="header-mark"></a>常见问题修复</h2><h3 id="找不到蓝牙设备" class="headerLink">
+    <a href="#%e6%89%be%e4%b8%8d%e5%88%b0%e8%93%9d%e7%89%99%e8%ae%be%e5%a4%87" class="header-mark"></a>找不到蓝牙设备</h3><p>执行命令:</p>]]></description></item><item><title>Linux创建普通用户并禁止密码登录</title><link>https://golixp.github.io/posts/linux/linux%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</link><pubDate>Fri, 23 Jan 2026 00:04:24 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/linux%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</guid><description><![CDATA[<div class="code-block highlight is-closed   tw-group tw-my-2">
   <div class="
     
     tw-flex 
@@ -246,69 +373,4 @@
       aria-hidden="true">
           <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">gitignore</p>]]></description></item><item><title>Linux 下 Btrfs 文件系统快照</title><link>https://golixp.github.io/posts/linux/linux%E4%B8%8Bbtrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%BF%AB%E7%85%A7/</link><pubDate>Sun, 18 Jan 2026 00:06:47 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/linux%E4%B8%8Bbtrfs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%BF%AB%E7%85%A7/</guid><description><![CDATA[<h2 id="安装系统快照备份" class="headerLink">
-    <a href="#%e5%ae%89%e8%a3%85%e7%b3%bb%e7%bb%9f%e5%bf%ab%e7%85%a7%e5%a4%87%e4%bb%bd" class="header-mark"></a>安装系统快照备份</h2><p>常用快照组件有 TimeShift 和 Snapper .</p>
-<h3 id="timeshift" class="headerLink">
-    <a href="#timeshift" class="header-mark"></a>TimeShift</h3><p>TimeShift 是 Ubuntu 常用的快照软件, 使用以下命令安装</p>
-<div class="code-block highlight is-open   tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">text</p>]]></description></item><item><title>Zsh 安装配置</title><link>https://golixp.github.io/posts/linux/zsh%E9%85%8D%E7%BD%AE/</link><pubDate>Sun, 18 Jan 2026 00:06:38 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/zsh%E9%85%8D%E7%BD%AE/</guid><description><![CDATA[<h2 id="安装-shell" class="headerLink">
-    <a href="#%e5%ae%89%e8%a3%85-shell" class="header-mark"></a>安装 Shell</h2><p>Arch Linux 主流选择有 Fish 和 Zsh, Fish 开箱即用但是不兼容 Bash, 配置为系统默认 Shell 会有很多问题, Zsh 兼容 Bash, 可以作为系统默认 Shell, 但是配置比较复杂并且启动速度不如 Fish.</p>
-<p>首先安装 Zsh 本体:</p>]]></description></item><item><title>Fcitx5+Rime 输入法安装</title><link>https://golixp.github.io/posts/linux/fcitx5+rime%E8%BE%93%E5%85%A5%E6%B3%95%E5%AE%89%E8%A3%85/</link><pubDate>Sun, 18 Jan 2026 00:06:24 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/fcitx5+rime%E8%BE%93%E5%85%A5%E6%B3%95%E5%AE%89%E8%A3%85/</guid><description><![CDATA[<p>使用 Arch Linux 系统, 首先安装 Fcitx5 和 Rime.</p>
-<div class="code-block highlight is-open   tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">bash</p>]]></description></item><item><title>双系统更改 Grub 启动顺序</title><link>https://golixp.github.io/posts/linux/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%94%B9grub%E5%90%AF%E5%8A%A8%E9%A1%BA%E5%BA%8F/</link><pubDate>Sun, 18 Jan 2026 00:05:50 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%9B%B4%E6%94%B9grub%E5%90%AF%E5%8A%A8%E9%A1%BA%E5%BA%8F/</guid><description><![CDATA[<p>如果使用了 Timeshift 或者 Snapper 的快照功能, 安装 <code>grub-btrfs</code> 实现在 Grub 界面直接从快照启动, 这样在系统挂掉后可以从快照启动进入系统而不需要 LiveCD .</p>
-<div class="code-block highlight is-open   tw-group tw-my-2">
-  <div class="
-    
-    tw-flex 
-    tw-flex-row
-    tw-flex-1 
-    tw-justify-between 
-    tw-w-full tw-bg-bgColor-secondary
-    ">      
-    <button 
-      class="
-        code-block-button
-        tw-mx-2 
-        tw-flex
-        tw-flex-row
-        tw-flex-1"
-      aria-hidden="true">
-          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
-          <p class="tw-select-none !tw-my-1">sh</p>]]></description></item></channel></rss>
+          <p class="tw-select-none !tw-my-1">gitignore</p>]]></description></item></channel></rss>

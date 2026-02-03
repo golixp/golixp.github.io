@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蓝牙 on Lixp Blog</title><link>https://golixp.github.io/tags/%E8%93%9D%E7%89%99/</link><description>Recent content in 蓝牙 on Lixp Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>golixp@outlook.com (Lixp)</managingEditor><webMaster>golixp@outlook.com (Lixp)</webMaster><lastBuildDate>Tue, 03 Feb 2026 16:54:49 +0800</lastBuildDate><atom:link href="https://golixp.github.io/tags/%E8%93%9D%E7%89%99/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux蓝牙连接</title><link>https://golixp.github.io/posts/linux/linux%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</link><pubDate>Sat, 31 Jan 2026 21:58:00 +0800</pubDate><author>golixp@outlook.com (Lixp)</author><guid>https://golixp.github.io/posts/linux/linux%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</guid><description>&lt;h2 id="bluetoothctl-命令行连接" class="headerLink"&gt;
+ &lt;a href="#bluetoothctl-%e5%91%bd%e4%bb%a4%e8%a1%8c%e8%bf%9e%e6%8e%a5" class="header-mark"&gt;&lt;/a&gt;bluetoothctl 命令行连接&lt;/h2&gt;&lt;p&gt;使用 &lt;code&gt;bluetoothctl&lt;/code&gt; 进入蓝牙交互界面&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;scan on&lt;/code&gt; / &lt;code&gt;scan off&lt;/code&gt; 开始和停止扫描&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pair XX:XX:XX:XX:XX:XX&lt;/code&gt; 发起配对, 如果设备有确认码, 终端会提示你输入 yes 来确认&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;trust XX:XX:XX:XX:XX:XX&lt;/code&gt; 信任设备, 下次断开后自动连接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;connect XX:XX:XX:XX:XX:XX&lt;/code&gt; 建立连接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;disconnect XX:XX:XX:XX:XX:XX&lt;/code&gt; 断开当前连接，但保留配对信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;remove XX:XX:XX:XX:XX:XX&lt;/code&gt; 删除配对信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="常见问题修复" class="headerLink"&gt;
+ &lt;a href="#%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98%e4%bf%ae%e5%a4%8d" class="header-mark"&gt;&lt;/a&gt;常见问题修复&lt;/h2&gt;&lt;h3 id="找不到蓝牙设备" class="headerLink"&gt;
+ &lt;a href="#%e6%89%be%e4%b8%8d%e5%88%b0%e8%93%9d%e7%89%99%e8%ae%be%e5%a4%87" class="header-mark"&gt;&lt;/a&gt;找不到蓝牙设备&lt;/h3&gt;&lt;p&gt;执行命令:&lt;/p&gt;</description></item></channel></rss>

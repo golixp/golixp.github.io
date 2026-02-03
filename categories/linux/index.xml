@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Lixp Blog</title><link>https://golixp.github.io/categories/linux/</link><description>Recent content in Linux on Lixp Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>golixp@outlook.com (Lixp)</managingEditor><webMaster>golixp@outlook.com (Lixp)</webMaster><lastBuildDate>Fri, 23 Jan 2026 00:04:24 +0800</lastBuildDate><atom:link href="https://golixp.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux创建普通用户并禁止密码登录</title><link>https://golixp.github.io/posts/linux/linux%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</link><pubDate>Fri, 23 Jan 2026 00:04:24 +0800</pubDate><author>golixp@outlook.com (Lixp)</author><guid>https://golixp.github.io/posts/linux/linux%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</guid><description>&lt;div class="code-block highlight is-closed tw-group tw-my-2"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Lixp Blog</title><link>https://golixp.github.io/categories/linux/</link><description>Recent content in Linux on Lixp Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>golixp@outlook.com (Lixp)</managingEditor><webMaster>golixp@outlook.com (Lixp)</webMaster><lastBuildDate>Tue, 03 Feb 2026 17:00:14 +0800</lastBuildDate><atom:link href="https://golixp.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux窗口管理器无线网络无法自动连接</title><link>https://golixp.github.io/posts/linux/linux%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E6%97%A0%E6%B3%95%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5/</link><pubDate>Sat, 31 Jan 2026 22:01:00 +0800</pubDate><author>golixp@outlook.com (Lixp)</author><guid>https://golixp.github.io/posts/linux/linux%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E6%97%A0%E6%B3%95%E8%87%AA%E5%8A%A8%E8%BF%9E%E6%8E%A5/</guid><description>&lt;p&gt;如果是先装的 KDE 再装的其它窗口管理器, NetworkManager 可能会被配置为读取 KWallet 的密码配置, 在脱离了 KDE 环境后, 可能会出现无法保存 WIFI 密码的情况, 每次都得手动输入密码, 可以在 &lt;code&gt;/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf&lt;/code&gt; 加入如下配置:&lt;/p&gt;</description></item><item><title>Linux人脸认证配置</title><link>https://golixp.github.io/posts/linux/linux%E4%BA%BA%E8%84%B8%E8%AE%A4%E8%AF%81%E9%85%8D%E7%BD%AE/</link><pubDate>Sat, 31 Jan 2026 22:00:00 +0800</pubDate><author>golixp@outlook.com (Lixp)</author><guid>https://golixp.github.io/posts/linux/linux%E4%BA%BA%E8%84%B8%E8%AE%A4%E8%AF%81%E9%85%8D%E7%BD%AE/</guid><description>&lt;h2 id="确认红外摄像头硬件信息" class="headerLink"&gt;
+ &lt;a href="#%e7%a1%ae%e8%ae%a4%e7%ba%a2%e5%a4%96%e6%91%84%e5%83%8f%e5%a4%b4%e7%a1%ac%e4%bb%b6%e4%bf%a1%e6%81%af" class="header-mark"&gt;&lt;/a&gt;确认红外摄像头硬件信息&lt;/h2&gt;&lt;p&gt;首先需要确认电脑是否有红外摄像头, 输入 &lt;code&gt;v4l2-ctl --list-devices&lt;/code&gt; 命令观察输出:&lt;/p&gt;
+&lt;div class="code-block highlight is-open tw-group tw-my-2"&gt;
+ &lt;div class="
+ 
+ tw-flex 
+ tw-flex-row
+ tw-flex-1 
+ tw-justify-between 
+ tw-w-full tw-bg-bgColor-secondary
+ "&gt; 
+ &lt;button 
+ class="
+ code-block-button
+ tw-mx-2 
+ tw-flex
+ tw-flex-row
+ tw-flex-1"
+ aria-hidden="true"&gt;
+ &lt;div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"&gt;&lt;svg class="icon"
+ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/&gt;&lt;/svg&gt;&lt;/div&gt;
+ &lt;p class="tw-select-none !tw-my-1"&gt;text&lt;/p&gt;</description></item><item><title>Linux蓝牙连接</title><link>https://golixp.github.io/posts/linux/linux%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</link><pubDate>Sat, 31 Jan 2026 21:58:00 +0800</pubDate><author>golixp@outlook.com (Lixp)</author><guid>https://golixp.github.io/posts/linux/linux%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/</guid><description>&lt;h2 id="bluetoothctl-命令行连接" class="headerLink"&gt;
+ &lt;a href="#bluetoothctl-%e5%91%bd%e4%bb%a4%e8%a1%8c%e8%bf%9e%e6%8e%a5" class="header-mark"&gt;&lt;/a&gt;bluetoothctl 命令行连接&lt;/h2&gt;&lt;p&gt;使用 &lt;code&gt;bluetoothctl&lt;/code&gt; 进入蓝牙交互界面&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;scan on&lt;/code&gt; / &lt;code&gt;scan off&lt;/code&gt; 开始和停止扫描&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pair XX:XX:XX:XX:XX:XX&lt;/code&gt; 发起配对, 如果设备有确认码, 终端会提示你输入 yes 来确认&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;trust XX:XX:XX:XX:XX:XX&lt;/code&gt; 信任设备, 下次断开后自动连接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;connect XX:XX:XX:XX:XX:XX&lt;/code&gt; 建立连接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;disconnect XX:XX:XX:XX:XX:XX&lt;/code&gt; 断开当前连接，但保留配对信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;remove XX:XX:XX:XX:XX:XX&lt;/code&gt; 删除配对信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="常见问题修复" class="headerLink"&gt;
+ &lt;a href="#%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98%e4%bf%ae%e5%a4%8d" class="header-mark"&gt;&lt;/a&gt;常见问题修复&lt;/h2&gt;&lt;h3 id="找不到蓝牙设备" class="headerLink"&gt;
+ &lt;a href="#%e6%89%be%e4%b8%8d%e5%88%b0%e8%93%9d%e7%89%99%e8%ae%be%e5%a4%87" class="header-mark"&gt;&lt;/a&gt;找不到蓝牙设备&lt;/h3&gt;&lt;p&gt;执行命令:&lt;/p&gt;</description></item><item><title>Linux创建普通用户并禁止密码登录</title><link>https://golixp.github.io/posts/linux/linux%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</link><pubDate>Fri, 23 Jan 2026 00:04:24 +0800</pubDate><author>golixp@outlook.com (Lixp)</author><guid>https://golixp.github.io/posts/linux/linux%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%B9%B6%E7%A6%81%E6%AD%A2%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95/</guid><description>&lt;div class="code-block highlight is-closed tw-group tw-my-2"&gt;
  &lt;div class="
  
  tw-flex 
