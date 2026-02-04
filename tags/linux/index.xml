@@ -171,26 +171,6 @@
  aria-hidden="true"&gt;
  &lt;div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"&gt;&lt;svg class="icon"
  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/&gt;&lt;/svg&gt;&lt;/div&gt;
- &lt;p class="tw-select-none !tw-my-1"&gt;sh&lt;/p&gt;</description></item><item><title>Podman安装配置</title><link>https://golixp.github.io/posts/linux/podman%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link><pubDate>Tue, 20 Jan 2026 19:58:47 +0800</pubDate><author>golixp@outlook.com (Lixp)</author><guid>https://golixp.github.io/posts/linux/podman%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid><description>&lt;p&gt;在 Arch Linux 中可以用以下命令安装 Podman:&lt;/p&gt;
-&lt;div class="code-block highlight is-open tw-group tw-my-2"&gt;
- &lt;div class="
- 
- tw-flex 
- tw-flex-row
- tw-flex-1 
- tw-justify-between 
- tw-w-full tw-bg-bgColor-secondary
- "&gt; 
- &lt;button 
- class="
- code-block-button
- tw-mx-2 
- tw-flex
- tw-flex-row
- tw-flex-1"
- aria-hidden="true"&gt;
- &lt;div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"&gt;&lt;svg class="icon"
- xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"&gt;&lt;!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --&gt;&lt;path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/&gt;&lt;/svg&gt;&lt;/div&gt;
  &lt;p class="tw-select-none !tw-my-1"&gt;sh&lt;/p&gt;</description></item><item><title>Ghostty冷启动优化</title><link>https://golixp.github.io/posts/ghostty%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/</link><pubDate>Mon, 19 Jan 2026 15:23:54 +0800</pubDate><author>golixp@outlook.com (Lixp)</author><guid>https://golixp.github.io/posts/ghostty%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/</guid><description>&lt;p&gt;相比于 Alacritty, Ghostty 虽然功能更多但是冷启动速度更慢, 要加快冷启动速度, 官方文档提到可以使在图形界面登录时就启动 Ghostty.&lt;/p&gt;
 &lt;h2 id="使用-systemd-启动服务" class="headerLink"&gt;
  &lt;a href="#%e4%bd%bf%e7%94%a8-systemd-%e5%90%af%e5%8a%a8%e6%9c%8d%e5%8a%a1" class="header-mark"&gt;&lt;/a&gt;使用 Systemd 启动服务&lt;/h2&gt;&lt;p&gt;使用以下命令将 Ghostty 服务添加到用户服务中:&lt;/p&gt;</description></item></channel></rss>
