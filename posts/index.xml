@@ -1,4 +1,24 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Lixp Blog</title><link>https://golixp.github.io/posts/</link><description>所有文章 | Lixp Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>golixp@outlook.com (Lixp)</managingEditor><webMaster>golixp@outlook.com (Lixp)</webMaster><lastBuildDate>Wed, 04 Feb 2026 23:56:00 +0800</lastBuildDate><atom:link href="https://golixp.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Linux桌面内存优化</title><link>https://golixp.github.io/posts/linux/linux%E6%A1%8C%E9%9D%A2%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96/</link><pubDate>Wed, 04 Feb 2026 23:56:00 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/linux%E6%A1%8C%E9%9D%A2%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96/</guid><description><![CDATA[<h2 id="zswap-和-zram-选型" class="headerLink">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Lixp Blog</title><link>https://golixp.github.io/posts/</link><description>所有文章 | Lixp Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>golixp@outlook.com (Lixp)</managingEditor><webMaster>golixp@outlook.com (Lixp)</webMaster><lastBuildDate>Mon, 09 Feb 2026 17:44:00 +0800</lastBuildDate><atom:link href="https://golixp.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Gnome删除游戏</title><link>https://golixp.github.io/posts/linux/gnome%E5%88%A0%E9%99%A4%E6%B8%B8%E6%88%8F/</link><pubDate>Mon, 09 Feb 2026 17:44:00 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/gnome%E5%88%A0%E9%99%A4%E6%B8%B8%E6%88%8F/</guid><description><![CDATA[<p>Arch 系发行版执行命令:</p>
+<div class="code-block highlight is-open   tw-group tw-my-2">
+  <div class="
+    
+    tw-flex 
+    tw-flex-row
+    tw-flex-1 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        code-block-button
+        tw-mx-2 
+        tw-flex
+        tw-flex-row
+        tw-flex-1"
+      aria-hidden="true">
+          <div class="group-[.is-open]:tw-rotate-90 tw-transition-[transform] tw-duration-500 tw-ease-in-out print:!tw-hidden tw-w-min tw-h-min tw-my-1 tw-mx-1"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
+          <p class="tw-select-none !tw-my-1">bash</p>]]></description></item><item><title>Linux桌面内存优化</title><link>https://golixp.github.io/posts/linux/linux%E6%A1%8C%E9%9D%A2%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96/</link><pubDate>Wed, 04 Feb 2026 23:56:00 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/linux%E6%A1%8C%E9%9D%A2%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96/</guid><description><![CDATA[<h2 id="zswap-和-zram-选型" class="headerLink">
     <a href="#zswap-%e5%92%8c-zram-%e9%80%89%e5%9e%8b" class="header-mark"></a>zswap 和 zram 选型</h2><p>zswap 是 ram 和 swap 的缓冲层, 当系统向 swap 写入数据时, zswap 会先压缩数据放到内存, 如果内存压缩满足一个阈值, 才会真正往 swap 写入数据; zram 是将内存的一部分配置为 swap, 系统向 swap 写入时就会向 zram 配置的内存段用 zstd 压缩后写入, 相当于扩展了一部分内存.</p>]]></description></item><item><title>Podman安装配置</title><link>https://golixp.github.io/posts/linux/podman%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</link><pubDate>Wed, 04 Feb 2026 18:41:00 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/linux/podman%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</guid><description><![CDATA[<p>在 Arch Linux 中可以用以下命令安装 Podman:</p>
 <div class="code-block highlight is-open   tw-group tw-my-2">
   <div class="
@@ -321,37 +341,4 @@
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></div>
           <p class="tw-select-none !tw-my-1">sh</p>]]></description></item><item><title>Ghostty冷启动优化</title><link>https://golixp.github.io/posts/ghostty%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/</link><pubDate>Mon, 19 Jan 2026 15:23:54 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/ghostty%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/</guid><description><![CDATA[<p>相比于 Alacritty, Ghostty 虽然功能更多但是冷启动速度更慢, 要加快冷启动速度, 官方文档提到可以使在图形界面登录时就启动 Ghostty.</p>
 <h2 id="使用-systemd-启动服务" class="headerLink">
-    <a href="#%e4%bd%bf%e7%94%a8-systemd-%e5%90%af%e5%8a%a8%e6%9c%8d%e5%8a%a1" class="header-mark"></a>使用 Systemd 启动服务</h2><p>使用以下命令将 Ghostty 服务添加到用户服务中:</p>]]></description></item><item><title>Markdown代码块的标示</title><link>https://golixp.github.io/posts/markdown%E4%BB%A3%E7%A0%81%E5%9D%97%E7%9A%84%E6%A0%87%E7%A4%BA/</link><pubDate>Sun, 18 Jan 2026 17:34:15 +0800</pubDate><author><name>Lixp</name></author><guid>https://golixp.github.io/posts/markdown%E4%BB%A3%E7%A0%81%E5%9D%97%E7%9A%84%E6%A0%87%E7%A4%BA/</guid><description><![CDATA[<table>
-  <thead>
-      <tr>
-          <th>实际内容</th>
-          <th>代码块语言标识</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>~/.ssh/config</td>
-          <td><code>ssh-config</code></td>
-      </tr>
-      <tr>
-          <td>/etc/environment</td>
-          <td><code>bash</code> or <code>env</code></td>
-      </tr>
-      <tr>
-          <td>pacman相关配置</td>
-          <td><code>conf</code> or <code>ini</code></td>
-      </tr>
-      <tr>
-          <td>命令行输出</td>
-          <td><code>console</code></td>
-      </tr>
-      <tr>
-          <td>~/.config/environment.d/10-wayland.conf</td>
-          <td><code>conf</code></td>
-      </tr>
-      <tr>
-          <td>一般的配置文件</td>
-          <td><code>conf</code></td>
-      </tr>
-  </tbody>
-</table>]]></description></item></channel></rss>
+    <a href="#%e4%bd%bf%e7%94%a8-systemd-%e5%90%af%e5%8a%a8%e6%9c%8d%e5%8a%a1" class="header-mark"></a>使用 Systemd 启动服务</h2><p>使用以下命令将 Ghostty 服务添加到用户服务中:</p>]]></description></item></channel></rss>
